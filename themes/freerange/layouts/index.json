@@ -1,0 +1,17 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+  {{- if and (not .Draft) (not .Params.private) -}}
+    {{- $.Scratch.Add "index" (dict
+      "title" .Title
+      "content" (.Plain | htmlUnescape)
+      "description" (.Description | plainify | htmlUnescape)
+      "permalink" .Permalink
+      "date" .Date
+      "tags" .Params.tags
+      "categories" .Params.categories
+      "readingTime" .ReadingTime
+      "section" .Section
+    ) -}}
+  {{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
