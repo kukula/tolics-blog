@@ -1,0 +1,26 @@
+{{- if .Params.series }}
+<div class="post-series">
+    <h3>This post is part of a series:</h3>
+    {{- range .Params.series }}
+    {{- with $.Site.GetPage (printf "/series/%s" (. | urlize)) }}
+    <div class="series-box">
+        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        {{- $posts := .Pages }}
+        {{- if gt (len $posts) 0 }}
+        <ol class="series-posts">
+            {{- range $posts }}
+            <li>
+                {{- if eq .Permalink $.Permalink }}
+                <strong>{{ .Title }}</strong> (You are here)
+                {{- else }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                {{- end }}
+            </li>
+            {{- end }}
+        </ol>
+        {{- end }}
+    </div>
+    {{- end }}
+    {{- end }}
+</div>
+{{- end }}
