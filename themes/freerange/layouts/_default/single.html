@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="post-single">
+    <header class="post-header card--large card--accent">
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-meta text-meta">
+            {{ .Date.Format "Jan 02, 2006" }} • {{ .ReadingTime }} min read
+            {{ if .Params.author }} • BY {{ .Params.author | upper }}{{ end }}
+            {{ if .Params.category }} • {{ .Params.category | upper }}{{ end }}
+        </div>
+    </header>
+    <div class="post-content">
+        {{ .Content }}
+        
+        {{ if .Params.tags }}
+            <div class="tags">
+                {{ range .Params.tags }}
+                    <a href="/tags/{{ . | urlize }}" class="tag btn btn--small btn--primary">#{{ . | upper }}</a>
+                {{ end }}
+            </div>
+        {{ end }}
+    </div>
+</article>
+
+{{ if or .Params.author_bio .Site.Params.author_bio }}
+<div class="author-info card card--highlight">
+    <div class="author-name">{{ .Params.author | default .Site.Params.author | default "Author" }}</div>
+    <div class="author-bio">{{ .Params.author_bio | default .Site.Params.author_bio | default "Software architect and engineering leader exploring the intersection of AI, distributed systems, and human-centered design." }}</div>
+</div>
+{{ end }}
+{{ end }}

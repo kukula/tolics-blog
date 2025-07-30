@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="post-list">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "posts" "post")) }}
+    {{ range $paginator.Pages }}
+        <article class="post-card">
+            <header class="post-header card--large card--accent">
+                <h2 class="post-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+                <div class="post-meta text-meta">
+                    {{ .Date.Format "Jan 02, 2006" }} • {{ .ReadingTime }} min read
+                    {{ if .Params.category }} • {{ .Params.category | upper }}{{ end }}
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="post-excerpt bordered-accent">
+                    {{ .Description }}
+                </div>
+                <a href="{{ .Permalink }}" class="btn btn--secondary">READ ARTICLE →</a>
+            </div>
+        </article>
+    {{ end }}
+    
+    {{ if or $paginator.HasPrev $paginator.HasNext }}
+    <nav class="pagination">
+        {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="btn btn--secondary">← PREVIOUS</a>
+        {{ end }}
+        <span class="page-info">PAGE {{ $paginator.PageNumber }} OF {{ $paginator.TotalPages }}</span>
+        {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="btn btn--secondary">NEXT →</a>
+        {{ end }}
+    </nav>
+    {{ end }}
+</div>
+{{ end }}

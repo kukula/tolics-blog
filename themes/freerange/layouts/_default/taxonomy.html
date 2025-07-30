@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="taxonomy-container">
+    <h1 class="page-title">{{ .Title | upper }}</h1>
+    
+    <div class="terms-list flex-wrap">
+        {{ range .Pages }}
+            <a href="{{ .Permalink }}" class="btn btn--large btn--outline search-result-item">
+                <div class="search-result-title">{{ .Title }}</div>
+                <div class="search-result-meta">{{ .Date.Format "Jan 02, 2006" }} • {{ .ReadingTime }} min read</div>
+                {{ if .Description }}
+                    <div class="search-result-summary">{{ .Description | truncate 150 }}</div>
+                {{ end }}
+                {{ if .Params.tags }}
+                    <div class="search-result-tags">
+                        {{ range first 3 .Params.tags }}
+                            <span class="search-result-tag">#{{ . | upper }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

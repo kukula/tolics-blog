@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{- $title := .Site.Title -}}
+{{- $description := .Site.Params.description -}}
+
+{{- if .IsHome -}}
+    {{- $title = printf "%s - Software Architecture & Engineering Insights" .Site.Title -}}
+    {{- $description = "Practical insights on software architecture, AI systems, and engineering leadership from 20+ years building scalable systems at high-growth companies." -}}
+{{- else if eq .Kind "taxonomy" -}}
+    {{- if eq .Type "tags" -}}
+        {{- $title = printf "Posts tagged '%s' - %s" .Title .Site.Title -}}
+        {{- $description = printf "Explore articles about %s. Practical software engineering insights and architecture patterns." .Title -}}
+    {{- else if eq .Type "categories" -}}
+        {{- $title = printf "%s - %s" .Title .Site.Title -}}
+        {{- $description = printf "Articles in %s. Deep dives into software architecture, engineering practices, and technical leadership." .Title -}}
+    {{- end -}}
+{{- else if eq .Kind "term" -}}
+    {{- $title = printf "All %s - %s" .Title .Site.Title -}}
+    {{- $description = printf "Browse all %s topics. Software architecture, engineering insights, and technical deep-dives." .Title -}}
+{{- else if eq .Title "Search" -}}
+    {{- $title = printf "Search - %s" .Site.Title -}}
+    {{- $description = "Search articles on software architecture, AI systems, engineering leadership, and technical practices." -}}
+{{- else -}}
+    {{- $title = printf "%s - %s" .Title .Site.Title -}}
+    {{- if .Description -}}
+        {{- $description = .Description -}}
+    {{- else if .Summary -}}
+        {{- $description = .Summary | plainify | truncate 160 -}}
+    {{- end -}}
+{{- end -}}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+{{ if .Site.Params.favicon }}
+<link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
+{{ end }}
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{ with .Site.Config.Services.GoogleAnalytics.ID }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{ end }}

@@ -1,0 +1,12 @@
+name = "Freerange"
+license = "MIT"
+licenselink = "https://mit-license.org"
+description = "A neobrutalist text-only Hugo theme with bold typography and sharp contrasts"
+homepage = "https://github.com/kukula/tolics-blog/tree/main/themes/freerange"
+tags = ["blog", "minimal", "neobrutalist", "text-only", "responsive", "dark-mode"]
+features = ["responsive", "dark mode", "text-only", "neobrutalist"]
+min_version = "0.110.0"
+
+[author]
+  name = "Tolic"
+  homepage = "https://freerangetolic.com"
