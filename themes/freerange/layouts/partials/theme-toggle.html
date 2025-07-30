@@ -1,0 +1,38 @@
+<script>
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+function toggleMenu() {
+    const nav = document.getElementById('nav-menu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    nav.classList.toggle('nav-open');
+    menuToggle.classList.toggle('menu-active');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const nav = document.getElementById('nav-menu');
+        const menuToggle = document.querySelector('.menu-toggle');
+        if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+            nav.classList.remove('nav-open');
+            menuToggle.classList.remove('menu-active');
+        }
+    });
+});
+</script>
