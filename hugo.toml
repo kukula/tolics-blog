@@ -1,0 +1,165 @@
+baseURL = 'https://freerangetolic.com'
+languageCode = 'en-us'
+title = "Tolics Engineering Mind"
+theme = 'PaperMod'
+
+[params]
+env = "production"
+title = "Tolics Engineering Mind"
+description = "Software architect & visionary exploring AI, automation, and neurodivergent-friendly systems"
+keywords = ["AI", "software architecture", "ADHD", "automation", "startup", "engineering"]
+author = "Tolics"
+
+# Analytics
+googleAnalytics = "G-XXXXXXXXXX"  # Replace with your actual GA4 tracking ID
+
+# Theme settings
+defaultTheme = "dark"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+ShowToc = true
+TocOpen = false
+
+# Search settings
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+# Profile mode for homepage
+[params.profileMode]
+enabled = false
+title = "Tolics Engineering Mind"
+subtitle = "// Software Architect & Visionary"
+imageUrl = ""
+imageWidth = 120
+imageHeight = 120
+
+# Show posts on homepage
+[params.homeInfoParams]
+Title = "Tolics Engineering Mind"
+Content = "Software architect & visionary exploring AI, automation, and neurodivergent-friendly systems"
+imageTitle = "Tolics"
+
+[[params.profileMode.buttons]]
+name = "Posts"
+url = "posts"
+
+[[params.profileMode.buttons]]
+name = "About"
+url = "about"
+
+[[params.profileMode.buttons]]
+name = "Tags"
+url = "tags"
+
+# Social icons
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/kukula"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/freerangetolic"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/tolic/"
+
+[[params.socialIcons]]
+name = "rss"
+url = "index.xml"
+
+# Menu
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "series"
+name = "Series"
+url = "/series/"
+weight = 25
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 28
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 30
+
+[[menu.main]]
+identifier = "consulting"
+name = "Consulting"
+url = "/consulting/"
+weight = 35
+
+# Markup settings
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "dracula"
+lineNos = true
+noClasses = false
+anchorLineNos = true
+codeFences = true
+guessSyntax = true
+lineNumbersInTable = true
+
+# Taxonomies
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
+# Output formats
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# Minification settings
+[minify]
+disableCSS = false
+disableHTML = false
+disableJS = false
+disableJSON = false
+disableSVG = false
+disableXML = false
+minifyOutput = true
+[minify.tdewolff]
+[minify.tdewolff.css]
+keepCSS2 = true
+precision = 0
+[minify.tdewolff.html]
+keepComments = false
+keepDefaultAttrVals = true
+keepDocumentTags = true
+keepEndTags = true
+keepQuotes = false
+keepWhitespace = false
