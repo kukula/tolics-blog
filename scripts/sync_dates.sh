@@ -1,9 +1,14 @@
 #!/bin/bash
 
 # Sync front matter dates with filename dates
+# Works regardless of current directory
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
 echo "Syncing front matter dates with filename dates..."
 
-for file in content/posts/*.md; do
+for file in "$PROJECT_ROOT"/content/posts/*.md; do
   if [ -f "$file" ]; then
     # Extract date from filename (YYYY-MM-DD)
     basename_file=$(basename "$file")
