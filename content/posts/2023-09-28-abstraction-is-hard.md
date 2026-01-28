@@ -11,7 +11,7 @@ description: "Creating good abstractions is one of software development's hardes
 
 I learned abstraction through examples of rectangles and lines, like probably many of you did. I spent time thinking abstractly about abstraction based on class names and story titles.
 
-This was a mistake. It's the same kind of mistake we make when we [copy solutions from other companies](/posts/hype-vs-pragmatic-development/) without understanding the problems they were meant to solve.
+This was a mistake. It's the same kind of mistake we make when we [copy solutions from other companies](/posts/2018-07-16-hype-vs-pragmatic-development/) without understanding the problems they were meant to solve.
 
 ## The Pedagogy Problem
 
