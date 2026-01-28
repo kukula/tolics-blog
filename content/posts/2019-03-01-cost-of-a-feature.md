@@ -9,7 +9,7 @@ categories: ["Software Development"]
 description: "Discover the hidden ongoing costs of software features that extend far beyond initial development. Learn to calculate true ROI and make better decisions."
 ---
 
-When we estimate a feature, we usually think about development time. But the real cost extends far beyond initial implementation. This is where [asking the right questions](/posts/hype-vs-pragmatic-development/) becomes crucial.
+When we estimate a feature, we usually think about development time. But the real cost extends far beyond initial implementation. This is where [asking the right questions](/posts/2018-07-16-hype-vs-pragmatic-development/) becomes crucial.
 
 ## The Iceberg of Feature Cost
 
