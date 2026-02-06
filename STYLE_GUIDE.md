@@ -100,6 +100,7 @@ categories: ["Primary Category"]
 - [ ] Spaces around em dashes
 - [ ] Clear value proposition in first paragraph
 - [ ] Actionable takeaway at end
+- [ ] Internal links verified (`./scripts/check_links.sh`)
 
 ---
 
