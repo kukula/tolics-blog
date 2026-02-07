@@ -139,5 +139,3 @@ Start with three things — the intent language parser (turning specs like the a
 The agents themselves can initially just be Claude or similar models with tool access to create drafts, run verification, and request promotion. The framework is the guardrails, not the intelligence.
 
 ---
-
-*Previous: [Ambiguity as a Vital Sign](/posts/2026-02-06-ambiguity-as-a-vital-sign/) · Next: [Living Software: The Persistence Layer](/posts/2026-02-08-living-software-persistence-layer/)*

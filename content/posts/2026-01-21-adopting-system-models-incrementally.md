@@ -49,5 +49,3 @@ The system cannot validate inside the box, but it validates at the boundaries. O
 Once the model exists: onboarding means reading the graph, not the code. Impact analysis is a graph traversal. Auditing is a query, not a code review.
 
 The goal is not to eliminate code. It is to make code the output of a process that preserves intent, rather than the input to a process that tries to recover it.
-
-*Previous: [The Self-Validating Graph](/posts/2026-01-20-the-self-validating-graph/) · Next: [Building a Graph-Based Intent Modelling Tool](/posts/2026-01-28-building-graph-based-intent-modelling-tool/)*

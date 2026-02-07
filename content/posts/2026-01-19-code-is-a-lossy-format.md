@@ -27,5 +27,3 @@ This is not a new idea. Model-Based Systems Engineering has existed since the 19
 What has changed is the translation layer. LLMs can bridge natural language and formal structure without requiring humans to learn a specification language. They can surface ambiguity as a feature rather than a failure mode — marking what is unclear rather than guessing.
 
 The vision is a system where the graph is the artifact. Not a diagram that describes the system, but the source of truth from which code and tests are derived.
-
-*Next: [The Self-Validating Graph](/posts/2026-01-20-the-self-validating-graph/)*

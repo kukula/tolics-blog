@@ -586,6 +586,40 @@ code {
 }
 
 /* ==========================================================================
+   COMPONENTS - Series Navigation
+   ========================================================================== */
+
+.series-nav {
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    border: var(--border-medium) solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    max-width: 65ch;
+}
+
+.series-nav__label {
+    font-family: var(--font-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-sm);
+}
+
+.series-nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.series-nav__prev,
+.series-nav__next {
+    font-size: 0.95rem;
+    border-bottom: none;
+}
+
+/* ==========================================================================
    PAGE - Search
    ========================================================================== */
 

@@ -46,5 +46,3 @@ The key UX decision: semantic gaps appear inline, next to the relevant node or e
 These tests target the execution surface: APIs, services, domain functions. They regenerate as the model evolves, ensuring tests always reflect current intent.
 
 The graph carries a schema for itself — expectations about what a valid model looks like — and diffs against that schema continuously.
-
-*Previous: [Code Is a Lossy Format](/posts/2026-01-19-code-is-a-lossy-format/) · Next: [Adopting System Models Incrementally](/posts/2026-01-21-adopting-system-models-incrementally/)*

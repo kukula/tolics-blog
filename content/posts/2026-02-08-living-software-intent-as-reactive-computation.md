@@ -265,5 +265,3 @@ A proof-of-concept would demonstrate the full lifecycle end-to-end: events arriv
 The core data structures — the consequence graph, the gap evaluator, and the conductor loop — are the heart of the whole framework. The next piece that would make this real is the intent language parser, turning the human-writable spec syntax into computable consequence graphs.
 
 ---
-
-*Previous: [Living Software: The Conductor](/posts/2026-02-08-living-software-the-conductor/)*

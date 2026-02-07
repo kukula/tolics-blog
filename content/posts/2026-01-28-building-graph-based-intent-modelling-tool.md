@@ -141,5 +141,3 @@ Generated 5 tests in 1 files
 ## Why This Matters
 
 Documentation drifts. Code decays. But a model that validates itself against both stays honest. When intent becomes structure, assumptions have nowhere to hide.
-
-*Previous: [Adopting System Models Incrementally](/posts/2026-01-21-adopting-system-models-incrementally/)*

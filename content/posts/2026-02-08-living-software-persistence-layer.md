@@ -156,5 +156,3 @@ The event log is the one thing in the whole framework that's truly permanent. Ev
 This means an agent could literally throw away the entire application layer and rebuild it from scratch, and no customer would lose a single data point. That's what makes "living system" safe rather than terrifying.
 
 ---
-
-*Previous: [Living Software: Architecture and Stability](/posts/2026-02-08-living-software-architecture-and-stability/) · Next: [Living Software: The Conductor](/posts/2026-02-08-living-software-the-conductor/)*

@@ -175,5 +175,3 @@ The conductor makes the system self-healing by default. You don't build recovery
 The question is how smart the spawned agents need to be for various classes of gaps — some are trivial (rebuild a projection), some require genuine reasoning (the data model needs to evolve to handle a new kind of input nobody anticipated).
 
 ---
-
-*Previous: [Living Software: The Persistence Layer](/posts/2026-02-08-living-software-persistence-layer/) · Next: [Living Software: Intent as Reactive Computation](/posts/2026-02-08-living-software-intent-as-reactive-computation/)*

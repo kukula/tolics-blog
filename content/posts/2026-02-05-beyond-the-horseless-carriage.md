@@ -64,5 +64,3 @@ If the system is organic, the next question is how you observe it — not throug
 Current: "AI writes the PR and another AI reviews it." That's the horseless carriage version. The car version hasn't been built yet.
 
 ---
-
-*Next: [Ambiguity as a Vital Sign](/posts/2026-02-06-ambiguity-as-a-vital-sign/)*

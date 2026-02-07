@@ -1,0 +1,34 @@
+{{ if .Params.series }}
+  {{ $currentPage := . }}
+  {{ $seriesName := index .Params.series 0 }}
+  {{ $pages := where .Site.RegularPages ".Params.series" "intersect" (slice $seriesName) }}
+  {{ $pages = $pages.ByDate }}
+  {{ $total := len $pages }}
+  {{ $prev := false }}
+  {{ $next := false }}
+  {{ $currentIndex := -1 }}
+  {{ range $i, $p := $pages }}
+    {{ if eq $p.File.UniqueID $currentPage.File.UniqueID }}
+      {{ $currentIndex = $i }}
+    {{ end }}
+  {{ end }}
+  {{ if gt $currentIndex 0 }}
+    {{ $prev = index $pages (sub $currentIndex 1) }}
+  {{ end }}
+  {{ if lt (add $currentIndex 1) $total }}
+    {{ $next = index $pages (add $currentIndex 1) }}
+  {{ end }}
+  {{ if or $prev $next }}
+  <nav class="series-nav" aria-label="Series navigation">
+    <div class="series-nav__label">{{ $seriesName }}</div>
+    <div class="series-nav__links">
+      {{ if $prev }}
+        <a href="{{ $prev.RelPermalink }}" class="series-nav__prev">Previous: {{ $prev.Title }}</a>
+      {{ end }}
+      {{ if $next }}
+        <a href="{{ $next.RelPermalink }}" class="series-nav__next">Next: {{ $next.Title }}</a>
+      {{ end }}
+    </div>
+  </nav>
+  {{ end }}
+{{ end }}

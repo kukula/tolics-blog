@@ -68,5 +68,3 @@ But there's more. The must/should/could priority system is the framework's versi
 Ambiguity in the organic sense is the felt quality of all these signals together. A framework that makes intent computable can turn that felt quality into a mechanical detection loop: declare what should be true, observe what is true, and the distance between them is work.
 
 ---
-
-*Previous: [Beyond the Horseless Carriage](/posts/2026-02-05-beyond-the-horseless-carriage/)*
