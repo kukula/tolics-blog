@@ -2,7 +2,7 @@
 title: "A CRM That Knows What It Doesn't Know"
 date: 2026-02-09
 lastmod: 2026-02-09
-draft: true
+draft: false
 author: "Tolic Kukul"
 description: "Probabilistic lead scoring with Pyro replaces brittle point systems with honest uncertainty, email fatigue modelling, and self-improving predictions."
 tags: ["ai", "declarative-programming", "software-architecture", "llms", "hybrid-systems"]
