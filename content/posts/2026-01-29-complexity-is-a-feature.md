@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Complexity often isn't a bug — it's a feature that benefits interpreters, gatekeepers, and incumbents. A developer's journey from automation idealist to systems realist."
 tags: ["software-architecture", "philosophy", "organizational-design", "technical-debt"]
 categories: ["Software Architecture"]
+series: ["By Design"]
 ---
 
 For over a thousand years, Ptolemy's geocentric model of the universe predicted planetary positions well enough for navigation and agriculture. The price? An ever-growing system of "epicycles" — circles upon circles upon circles, each patch compensating for the fundamental error of placing Earth at the center.

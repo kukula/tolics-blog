@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Sweden's concept of lagom — just the right amount — reveals how collective sufficiency creates societies where empathy becomes natural, not expensive."
 tags: ["philosophy", "psychology", "personal", "reflection"]
 categories: ["Philosophy"]
+series: ["Enough"]
 ---
 
 I lived in Sweden for a few years. People ask about the design, the meatballs, the darkness. What struck me most was something invisible — the calm.

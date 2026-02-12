@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Deep focus and extractable attention are fundamentally opposed objectives. The incentive structures and game theory behind why everyone defects toward noise."
 tags: ["productivity", "philosophy", "psychology", "organizational-design", "future-of-work"]
 categories: ["Philosophy"]
+series: ["By Design"]
 ---
 
 Deep focus feels good. It connects to flow, autonomy, mastery — the things that correlate with genuine satisfaction. People know this intuitively, which is why books about reclaiming attention sell millions of copies.
