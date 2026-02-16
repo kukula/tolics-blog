@@ -18,10 +18,14 @@
                 {{ end }}
             </div>
         {{ end }}
+
+        {{ partial "bluesky-share" . }}
     </div>
 </article>
 
 {{ partial "series-nav.html" . }}
+
+{{ partial "bluesky-comments" . }}
 
 {{ if or .Params.author_bio .Site.Params.author_bio }}
 <div class="author-info card card--highlight">

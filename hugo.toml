@@ -17,6 +17,7 @@ title = "Tolics Engineering Mind"
 description = "Software architecture, AI systems, and engineering insights"
 keywords = ["AI", "software architecture", "automation", "startup", "engineering"]
 author = "Tolic Kukul"
+bluesky = "@freerangetolic.com"
 
 # Analytics
 [services]
@@ -67,6 +68,10 @@ url = "https://twitter.com/freerangetolic"
 [[params.socialIcons]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/tolic/"
+
+[[params.socialIcons]]
+name = "bluesky"
+url = "https://bsky.app/profile/freerangetolic.com"
 
 [[params.socialIcons]]
 name = "rss"

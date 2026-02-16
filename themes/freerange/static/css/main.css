@@ -954,6 +954,71 @@ code {
 }
 
 /* ==========================================================================
+   COMPONENTS - Bluesky Share
+   ========================================================================== */
+
+.bluesky-share {
+    margin-top: var(--space-md);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+/* ==========================================================================
+   COMPONENTS - Bluesky Comments
+   ========================================================================== */
+
+.bluesky-comments-section {
+    max-width: 65ch;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: var(--border-medium) solid var(--border-color);
+}
+
+.bluesky-comments-section h3 {
+    margin-top: 0;
+}
+
+.bsky-comment {
+    border-left: var(--border-medium) solid var(--accent-primary);
+    padding: var(--space-sm) var(--space-md);
+    margin: var(--space-sm) 0;
+    background-color: var(--bg-accent);
+}
+
+.bsky-comment__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xs);
+    flex-wrap: wrap;
+}
+
+.bsky-comment__avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.bsky-comment__author {
+    font-weight: 700;
+}
+
+.bsky-comment__date {
+    color: var(--text-muted);
+    font-size: 0.85em;
+}
+
+.bsky-comment__text {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.bsky-comment__replies {
+    margin-left: var(--space-sm);
+}
+
+/* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
 

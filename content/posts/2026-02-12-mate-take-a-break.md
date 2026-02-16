@@ -8,6 +8,7 @@ description: "Productivity culture destroys the spontaneous, unstructured time w
 tags: ["productivity", "philosophy", "career", "future-of-work"]
 categories: ["Philosophy"]
 series: ["Enough"]
+bsky_thread: "https://bsky.app/profile/freerangetolic.com/post/3mexssrzy3k2a"
 ---
 
 There's a deep irony in the productivity movement: it often optimises for throughput while destroying the conditions that make throughput meaningful. You schedule your deep work blocks, batch your emails, time-box your socialising — and somewhere along the way the spontaneity that makes life feel like living gets squeezed out.

@@ -1,0 +1,108 @@
+{{ with .Params.bsky_thread }}
+<section class="bluesky-comments-section" id="bluesky-comments-section">
+  <h3>Comments via Bluesky</h3>
+  <p>
+    <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+      Join the conversation on Bluesky →
+    </a>
+  </p>
+  <div id="bluesky-comments" data-uri="{{ . }}">
+    <p><em>Loading comments...</em></p>
+  </div>
+</section>
+
+<script>
+(function() {
+  var container = document.getElementById('bluesky-comments');
+  var postUrl = container.getAttribute('data-uri');
+
+  var urlParts = postUrl.split('/');
+  var handle = urlParts[4];
+  var postId = urlParts[6];
+
+  function init() {
+    fetch('https://public.api.bsky.app/xrpc/com.atproto.identity.resolveHandle?handle=' + handle)
+      .then(function(resp) { return resp.json(); })
+      .then(function(resolveData) {
+        var atUri = 'at://' + resolveData.did + '/app.bsky.feed.post/' + postId;
+        return fetch('https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=' + encodeURIComponent(atUri) + '&depth=6');
+      })
+      .then(function(resp) { return resp.json(); })
+      .then(function(threadData) {
+        if (threadData.thread && threadData.thread.replies && threadData.thread.replies.length > 0) {
+          renderComments(threadData.thread.replies);
+        } else {
+          container.innerHTML = '<p><em>No comments yet. Be the first to reply on Bluesky!</em></p>';
+        }
+      })
+      .catch(function(err) {
+        console.error('Failed to load Bluesky comments:', err);
+        container.innerHTML = '<p><em>Could not load comments.</em></p>';
+      });
+  }
+
+  function renderComments(replies) {
+    replies.sort(function(a, b) {
+      return new Date(a.post.record.createdAt) - new Date(b.post.record.createdAt);
+    });
+
+    container.innerHTML = '';
+    replies.forEach(function(reply) {
+      if (reply.post) {
+        container.appendChild(createCommentEl(reply));
+      }
+    });
+  }
+
+  function createCommentEl(reply) {
+    var post = reply.post;
+    var author = post.author;
+    var record = post.record;
+    var date = new Date(record.createdAt);
+
+    var el = document.createElement('div');
+    el.className = 'bsky-comment';
+
+    var avatar = author.avatar
+      ? '<img src="' + author.avatar + '" alt="" class="bsky-comment__avatar">'
+      : '';
+
+    var profileUrl = 'https://bsky.app/profile/' + author.handle;
+    var displayName = escapeHtml(author.displayName || author.handle);
+
+    el.innerHTML =
+      '<div class="bsky-comment__header">' +
+        avatar +
+        '<a href="' + profileUrl + '" target="_blank" rel="noopener noreferrer" class="bsky-comment__author">' +
+          displayName +
+        '</a>' +
+        '<span class="bsky-comment__date">' +
+          date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) +
+        '</span>' +
+      '</div>' +
+      '<div class="bsky-comment__text">' + escapeHtml(record.text) + '</div>';
+
+    if (reply.replies && reply.replies.length > 0) {
+      var nested = document.createElement('div');
+      nested.className = 'bsky-comment__replies';
+      reply.replies
+        .sort(function(a, b) { return new Date(a.post.record.createdAt) - new Date(b.post.record.createdAt); })
+        .forEach(function(r) {
+          if (r.post) nested.appendChild(createCommentEl(r));
+        });
+      el.appendChild(nested);
+    }
+
+    return el;
+  }
+
+  function escapeHtml(text) {
+    var div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  init();
+})();
+</script>
+{{ end }}
