@@ -75,3 +75,4 @@ If you're an engineering manager or CTO facing complex architectural challenges,
 - **Twitter/X:** [@freerangetolic](https://twitter.com/freerangetolic)
 - **Email:** tolic@freerangetolic.com
 - **LinkedIn:** [@tolic](https://www.linkedin.com/in/tolic/)
+- **Bluesky:** [@freerangetolic.com](https://bsky.app/profile/freerangetolic.com)

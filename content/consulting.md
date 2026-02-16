@@ -227,4 +227,4 @@ Most clients transition to a monthly advisory retainer. I believe in building lo
 
 *Ready to turn your technical challenges into competitive advantages?*
 
-**Connect:** [LinkedIn](https://linkedin.com/in/tolic) | [Email](mailto:tolic@freerangetolic.com)
+**Connect:** [LinkedIn](https://linkedin.com/in/tolic) | [Bluesky](https://bsky.app/profile/freerangetolic.com) | [Email](mailto:tolic@freerangetolic.com)
