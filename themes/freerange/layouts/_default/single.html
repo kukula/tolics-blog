@@ -11,15 +11,16 @@
     <div class="post-content">
         {{ .Content }}
         
-        {{ if .Params.tags }}
+        <div class="post-footer-row">
+            {{ if .Params.tags }}
             <div class="tags">
                 {{ range .Params.tags }}
                     <a href="/tags/{{ . | urlize }}" class="tag btn btn--small btn--primary">#{{ . | upper }}</a>
                 {{ end }}
             </div>
-        {{ end }}
-
-        {{ partial "bluesky-share" . }}
+            {{ end }}
+            {{ partial "bluesky-share" . }}
+        </div>
     </div>
 </article>
 
