@@ -7,14 +7,81 @@
     <div class="container">
         {{- partial "header.html" . -}}
         {{- partial "nav.html" . -}}
-        
+
         <main class="main">
             {{- block "main" . }}{{- end }}
         </main>
-        
+
         {{- partial "footer.html" . -}}
     </div>
-    
+
     {{- partial "theme-toggle.html" . -}}
+    {{- if .Store.Get "hasMermaid" }}
+    <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+    // Mermaid's color parser doesn't support oklch(), so resolve
+    // computed CSS values to hex by painting a 1×1 canvas pixel and
+    // reading back sRGB bytes — works regardless of input color space.
+    const cvs = document.createElement('canvas');
+    cvs.width = 1;
+    cvs.height = 1;
+    const ctx = cvs.getContext('2d', { willReadFrequently: true });
+    function cssHex(name) {
+      const value = getComputedStyle(document.documentElement)
+        .getPropertyValue(name)
+        .trim();
+      ctx.clearRect(0, 0, 1, 1);
+      ctx.fillStyle = value;
+      ctx.fillRect(0, 0, 1, 1);
+      const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
+      return '#' + [r, g, b].map(c => c.toString(16).padStart(2, '0')).join('');
+    }
+
+    // Snapshot the original mermaid source BEFORE any rendering
+    const diagrams = document.querySelectorAll('.mermaid');
+    const sources = new Map();
+    diagrams.forEach(el => sources.set(el, el.innerHTML));
+
+    async function renderMermaid() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      // Restore source text and clear processed state before each render
+      diagrams.forEach(el => {
+        el.removeAttribute('data-processed');
+        el.innerHTML = sources.get(el);
+      });
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'base',
+        themeVariables: {
+          fontFamily: getComputedStyle(document.documentElement).getPropertyValue('--font-body').trim(),
+          background: cssHex('--bg-primary'),
+          primaryColor: cssHex('--bg-secondary'),
+          primaryTextColor: cssHex('--text-primary'),
+          primaryBorderColor: cssHex('--border-color'),
+          secondaryColor: cssHex('--bg-accent'),
+          secondaryTextColor: cssHex('--text-secondary'),
+          lineColor: cssHex('--accent-primary'),
+          tertiaryColor: cssHex('--bg-primary'),
+          edgeLabelBackground: cssHex('--bg-secondary'),
+          clusterBkg: cssHex('--bg-accent'),
+          clusterBorder: cssHex('--border-color'),
+        },
+      });
+      await mermaid.run({ nodes: Array.from(diagrams) });
+    }
+    // Wait for DOMContentLoaded so the theme-toggle script has already
+    // set data-theme from localStorage / OS preference before we render.
+    document.addEventListener('DOMContentLoaded', async () => {
+      await renderMermaid();
+
+      new MutationObserver(mutations => {
+        if (mutations.some(m => m.attributeName === 'data-theme')) {
+          renderMermaid();
+        }
+      }).observe(document.documentElement, { attributes: true });
+    });
+    </script>
+    {{- end }}
 </body>
 </html>

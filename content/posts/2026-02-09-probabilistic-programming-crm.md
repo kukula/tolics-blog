@@ -105,17 +105,12 @@ Compare this to the fantasy snippet. The structure is remarkably similar — we 
 
 You don't replace your CRM. The probabilistic engine lives alongside it:
 
-```
-CRM (HubSpot / Salesforce / custom)
-    ↓ webhooks on lead activity
-Probabilistic scoring service (FastAPI + NumPyro)
-    ↓ inference on new signals
-Results back as custom fields:
-  - conversion_probability: 0.72
-  - confidence: "low" (wide distribution)
-  - top_signal: "pricing_page_engagement"
-  - recommended_action: "needs more data"
-  - email_fatigue_risk: "high"
+```mermaid
+flowchart TD
+    A["CRM<br>(HubSpot / Salesforce / custom)"] -->|"webhooks on
+    lead activity"| B["Scoring Service<br>(FastAPI + NumPyro)"]
+    B -->|"inference on
+    new signals"| C["Enriched Custom Fields<br>conversion_probability · confidence<br>top_signal · recommended_action<br>email_fatigue_risk"]
 ```
 
 The CRM pushes events — page visits, email opens, form submissions — to the scoring service via webhooks. The service runs inference, updates beliefs for that lead, and writes enriched fields back. Sales reps see richer signals without changing their workflow.

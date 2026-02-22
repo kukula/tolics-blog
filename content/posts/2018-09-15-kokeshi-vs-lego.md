@@ -20,16 +20,12 @@ Kokeshi dolls (also known as Russian nesting dolls) stack abstractions on top of
 **In software, this looks like**: Frameworks built on frameworks, each layer adding its own abstractions and conventions, features distributed across multiple levels, deep inheritance hierarchies, middleware stacks with different concerns at each level.
 
 **Example: Web Framework Stacks**
-```
-Your Application
-  ↓ (uses)
-Web Framework (Rails, Django)
-  ↓ (uses)
-HTTP Server (Puma, Gunicorn)
-  ↓ (uses)
-Language Runtime (Ruby, Python)
-  ↓ (uses)
-Operating System
+```mermaid
+flowchart TD
+    A[Your Application] -->|uses| B["Web Framework<br>(Rails, Django)"]
+    B -->|uses| C["HTTP Server<br>(Puma, Gunicorn)"]
+    C -->|uses| D["Language Runtime<br>(Ruby, Python)"]
+    D -->|uses| E[Operating System]
 ```
 
 Each layer has different abstractions: application layer (models, controllers), framework layer (routing, middleware, ORM), server layer (request handling), runtime layer (memory management), OS layer (process management).

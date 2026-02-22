@@ -35,23 +35,23 @@ categories: ["Primary Category"]
 - "You don't need to win debates — you need to keep building."
 
 **Length**:
-- 150-400 words (excluding code samples)
+- Short-form: 150-400 words
+- Long-form (technical deep-dives): no hard cap, but earn every paragraph
 
 **Structure for posts**:
 1. Clear, engaging opening (challenge an assumption or reveal overlooked truth)
-2. Explain in short paragraphs (2-4 lines each, one idea per paragraph)
+2. Explain in short paragraphs (2-4 sentences, one idea per paragraph)
 3. One small example (moment, experience, or metaphor)
-4. Reflective closing line (slightly poetic but grounded)
+4. Cohesive closing — one section, not fragmented endings. Let data speak without editorialising. Close with a confident assertion or reflective line.
 
 **Formatting**:
 - Active voice
-- Short paragraphs (2-4 sentences)
 - Simple sentences, sophisticated vocabulary (deliberate, inevitable, clarity, substance)
 - Bold key concepts sparingly
 - Use spaces around em dashes: "idea — the next" not "idea—the next"
 - Australian English: organise, realise, colour, favour, centre
 
-**Avoid**: "I think", "maybe", "in some cases", "you must", "that's wrong", jargon without explanation
+**Avoid**: "I think", "maybe", "in some cases", "you must", "that's wrong", jargon without explanation, markdown tables (convert to prose or bullet lists — tables render poorly on mobile and in RSS), vendor-specific tool comparisons (they age fast — fold into a single sentence if essential)
 
 ---
 
@@ -69,10 +69,27 @@ categories: ["Primary Category"]
 - Test all examples
 - Keep under 80 characters per line
 
+**Diagrams**:
+- Use Mermaid (` ```mermaid `) instead of ASCII art — renders as SVG, responsive, and adapts to dark/light theme
+- Linear pipelines: use `flowchart TD` — keeps nodes full-width and readable on mobile
+- Branching graphs: use `flowchart LR` — branches stack vertically and stay narrow on mobile
+- Supported via Hugo code block render hook + Mermaid JS (loaded only on pages that use it)
+- If needed use CSS variables for accent-style highlighted nodes: `classDef accent fill:var(--accent-primary),stroke:var(--accent-secondary),color:white;`
+
+**Links**:
+- Limit inline links to 3–7 per post
+- Prefer primary sources (research papers, official engineering blogs) over vendor listicles or aggregator sites
+- Every inline link should directly support the claim it's attached to
+- Do not duplicate inline links in a footer section — if a source is linked in the text, it doesn't need a second entry
+- A **Further Reading** section at the end is for additional sources not already linked inline
+- Internal links use the full path with date prefix: `/posts/YYYY-MM-DD-slug/` (not just `/posts/slug/`)
+- **Verify every link before publishing** — both internal and external. Broken links erode trust.
+  - Internal: `./scripts/check_links.sh`
+  - External: `./scripts/check_external_links.sh`
+
 **SEO**:
 - Title: <60 characters, include primary keyword
 - Description: 150-160 characters, complete sentence
-- Use 3-6 tags from standardized list
 - Internal links to related posts
 
 ---
@@ -83,7 +100,7 @@ categories: ["Primary Category"]
 - Lowercase only: `ai` not `AI`
 - Hyphens for multi-word: `software-architecture`
 - 3-6 tags per post
-- Use standardized tags (see full list in appendix)
+- Use standardised tags (see full list in appendix)
 
 **Common tags**: `ai`, `software-development`, `software-architecture`, `design-patterns`, `code-quality`, `career`, `productivity`, `rust`, `ruby-on-rails`
 
@@ -93,14 +110,15 @@ categories: ["Primary Category"]
 
 - [ ] All required front matter fields present
 - [ ] Description is 150-160 characters
-- [ ] 3-6 tags from standardized list
+- [ ] 3-6 tags from standardised list
 - [ ] Heading hierarchy correct (no skipped levels)
 - [ ] Code examples tested and commented
 - [ ] Australian English spelling
 - [ ] Spaces around em dashes
 - [ ] Clear value proposition in first paragraph
-- [ ] Actionable takeaway at end
+- [ ] Strong closing — reflective, assertive, or both
 - [ ] Internal links verified (`./scripts/check_links.sh`)
+- [ ] External links verified (`./scripts/check_external_links.sh`)
 
 ---
 
@@ -118,7 +136,7 @@ categories: ["Primary Category"]
 ### Code Quality
 `code-quality`, `technical-debt`, `legacy-code`, `maintenance`, `refactoring`, `strangler-fig`
 
-### Business & Organization
+### Business & Organisation
 `enterprise`, `scaling`, `product-management`, `requirements`, `team-ownership`, `organizational-design`, `management`, `leadership`, `team-productivity`
 
 ### People & Skills
@@ -129,4 +147,4 @@ categories: ["Primary Category"]
 
 ---
 
-Last updated: 2025-10-19
+Last updated: 2026-02-22

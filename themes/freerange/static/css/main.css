@@ -891,16 +891,31 @@ code {
 }
 
 /* Strings */
-.chroma .s,  .chroma .sa, .chroma .sb, .chroma .sc,
-.chroma .dl, .chroma .sd, .chroma .s2, .chroma .se,
-.chroma .sh, .chroma .si, .chroma .sx, .chroma .sr,
-.chroma .s1, .chroma .ss {
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
     color: var(--syntax-string);
 }
 
 /* Numbers */
-.chroma .m,  .chroma .mb, .chroma .mf,
-.chroma .mh, .chroma .mi, .chroma .il, .chroma .mo {
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
     color: var(--syntax-number);
 }
 
@@ -911,8 +926,11 @@ code {
 }
 
 /* Comments */
-.chroma .c,  .chroma .ch, .chroma .cm,
-.chroma .c1, .chroma .cs {
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs {
     color: var(--syntax-comment);
 }
 
@@ -1074,6 +1092,74 @@ code {
     .read-more {
         padding: 0.625rem var(--space-sm);
     }
+}
+
+/* ==========================================================================
+   MERMAID DIAGRAMS
+   ========================================================================== */
+
+.mermaid {
+    width: 100%;
+    overflow-x: auto;
+    text-align: center;
+    margin: var(--space-md) 0;
+    font-family: var(--font-body);
+    color: var(--text-primary);
+}
+
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Node shapes — neobrutalist: no rounding, bold stroke, offset shadow */
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node ellipse {
+    fill: var(--bg-secondary);
+    stroke: var(--border-color);
+    stroke-width: 2px;
+    rx: 0;
+    filter: drop-shadow(3px 3px 0 var(--shadow-color));
+}
+
+/* Accent class nodes (via classDef accent) */
+.mermaid .node.accent rect,
+.mermaid .node.accent polygon,
+.mermaid .node.accent ellipse {
+    fill: var(--accent-primary);
+    stroke: var(--border-color);
+}
+
+.mermaid .node.accent .nodeLabel {
+    color: white;
+}
+
+/* Edge lines & arrowheads */
+.mermaid .edgePath path {
+    stroke: var(--accent-primary);
+    stroke-width: 2px;
+}
+
+.mermaid marker path {
+    fill: var(--accent-primary);
+    stroke: var(--accent-primary);
+}
+
+/* Edge labels */
+.mermaid .edgeLabel {
+    background-color: var(--bg-primary);
+    color: var(--accent-primary);
+    padding: 2px 6px;
+    font-weight: 600;
+}
+
+/* Clusters (subgraphs) */
+.mermaid .cluster rect {
+    fill: var(--bg-accent);
+    stroke: var(--border-color);
+    stroke-width: 2px;
+    rx: 0;
 }
 
 /* ==========================================================================
