@@ -77,7 +77,7 @@ categories: ["Primary Category"]
 - If needed use CSS variables for accent-style highlighted nodes: `classDef accent fill:var(--accent-primary),stroke:var(--accent-secondary),color:white;`
 
 **Links**:
-- Limit inline links to 3–7 per post
+- Limit inline links to max 7 per post
 - Prefer primary sources (research papers, official engineering blogs) over vendor listicles or aggregator sites
 - Every inline link should directly support the claim it's attached to
 - Do not duplicate inline links in a footer section — if a source is linked in the text, it doesn't need a second entry
@@ -128,7 +128,7 @@ categories: ["Primary Category"]
 `ai`, `ai-agents`, `machine-learning`, `llms`, `chatgpt`, `claude-code`, `software-development`, `declarative-programming`, `proof-systems`, `hybrid-systems`, `ruby-on-rails`, `rust`, `vim`
 
 ### Architecture & Design
-`software-architecture`, `design-patterns`, `modularity`, `abstractions`, `composition`, `microservices`, `distributed-systems`, `event-driven`, `real-time-systems`
+`software-architecture`, `design-patterns`, `best-practices`, `modularity`, `abstractions`, `composition`, `microservices`, `distributed-systems`, `event-driven`, `real-time-systems`
 
 ### System Operations
 `autonomous-systems`, `self-healing`, `adaptive-systems`, `resilience`, `circuit-breaker`, `consensus`, `ai-operations`, `event-streaming`, `batch-processing`, `data-processing`
