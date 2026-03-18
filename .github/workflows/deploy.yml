@@ -31,9 +31,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
           
+      - uses: actions/configure-pages@v5
+
       - run: hugo --minify
-      
-      - uses: actions/configure-pages@v4
         
       - uses: actions/upload-pages-artifact@v3
         with:
