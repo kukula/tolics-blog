@@ -12,6 +12,11 @@ seen_file=$(mktemp)
 broken_file=$(mktemp)
 trap 'rm -f "$seen_file" "$broken_file"' EXIT
 
+# Domains that block automated requests (403) but work in browsers
+BOT_BLOCKED_DOMAINS=(
+    "gartner.com"
+)
+
 check_url() {
     local file="$1" line_num="$2" url="$3"
 
@@ -39,9 +44,20 @@ check_url() {
     # Print result
     printf "  %-4s  %s:%d  %s\n" "$status" "$file" "$line_num" "$title"
 
-    # Track broken links
+    # Track broken links (skip domains known to block bots)
     if [[ "$status" =~ ^(0|4|5) ]]; then
-        echo "[$status] $file:$line_num $url" >> "$broken_file"
+        local is_blocked=false
+        for domain in "${BOT_BLOCKED_DOMAINS[@]}"; do
+            if [[ "$url" == *"$domain"* ]]; then
+                is_blocked=true
+                break
+            fi
+        done
+        if [[ "$is_blocked" == true ]]; then
+            printf "  ⚠ SKIP  %s:%d  (bot-blocked domain)\n" "$file" "$line_num"
+        else
+            echo "[$status] $file:$line_num $url" >> "$broken_file"
+        fi
     fi
 }
 
