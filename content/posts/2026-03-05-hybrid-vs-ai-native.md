@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "In hybrid AI organisations, developers aren't above the stack — they're stuck in between it, relaying intent like middle managers in a bloated org."
 tags: ["ai", "software-development", "ai-agents", "organizational-design", "future-of-work"]
 categories: ["AI and Development"]
+pinned: true
 ---
 
 ## The System

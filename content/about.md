@@ -1,78 +1,57 @@
 ---
 title: "About"
 date: 2023-03-08
-lastmod: 2023-03-08
+lastmod: 2026-04-02
 draft: false
 author: "Tolic Kukul"
-description: "Staff Software Engineer with 20+ years building scalable SaaS systems. Currently Tech Consultant at Ovie Health (AI startup). Led teams of 4-15 developers at StackAdapt, Instacart, CultureAmp, Seek."
-tags: ["about", "career", "software-architecture"]
+description: "Staff Engineer building agentic AI systems in Melbourne. 17 years of production SaaS, MSc in Applied Mathematics. Writing about AI-native architecture and the future of software."
+tags: ["about", "career", "software-architecture", "ai"]
 categories: ["Personal"]
 ---
 
-## Hey, I'm Tolic
+## I'm Tolic
 
-Staff Software Engineer with 20+ years leading teams and building scalable SaaS platforms. I've led engineering teams of 4-15 developers at companies like StackAdapt, Instacart, CultureAmp, Seek, and Redbubble.
+I've always been more interested in *why* systems fail than in the features they were supposed to ship.
 
-I think in patterns, optimise for maintainability, and believe the best architecture evolves gracefully when assumptions change.
+That instinct built a career — 17 years of production SaaS, an MSc in Applied Mathematics, and a trail of observability infrastructure, database migrations, and distributed systems across three continents. Now I'm in Melbourne, building agentic AI systems with the Claude API and writing about what AI-native software actually looks like.
 
-## What I've Built
+## Currently Building
 
-**Currently**: Tech Consultant at **Ovie Health** (AI startup) — Advising on technical architecture and AI/ML integration for healthcare platform.
+**[Promin Dev](https://promin.dev)** — Code loses its *why* over time. Requirements rot, tests outlive their intent, and nobody remembers which constraint forced that weird workaround. Promin is a knowledge graph that reconnects requirements, code, tests, and analytics — giving both engineers and AI agents a living map of intent. Built on Claude API + Claude Agent SDK + KuzuDB + Elixir/OTP.
 
-**At StackAdapt** (Staff Engineer, 2024-2025): Led 8-person distributed team delivering platform features. Reduced mean time to repair by 67% through comprehensive observability. Architected GraphQL gateway serving 8 backend services, cutting API response times by 40%.
+**[Evolvr](https://evolvr.tech)** — CommOps for Melbourne property managers. Automates email triage, response drafting, invoice validation, and reporting. RAG-powered knowledge base with human-in-the-loop approval gates and a [PII substitution layer](/posts/2026-02-10-ai-knows-your-clients-phone-number/) that keeps client data out of LLM context.
 
-**At Seek** (Senior Engineer, 2018-2021): Led distributed team building job aggregation platform serving 2M+ users globally. Migrated monolithic Rails to event-driven microservices using AWS EventBridge and Lambda. Built AI/ML spam detection processing millions of classifications daily with 95% accuracy. Reduced operational overhead by 70% through automation.
+## Writing
 
-**At Culture Amp** (Senior Engineer, 2023): Led zero-downtime migration from MongoDB to PostgreSQL for enterprise HR platform serving 3M+ users. Used CQRS and Strangler Fig patterns. Reduced infrastructure costs 30% through AWS optimisation.
+Posts that define my professional vision:
 
-**At Redbubble** (Senior Engineer, 2021-2022): Built 5 self-service automation tools reducing operational overhead by 70%. Optimised PostgreSQL queries, cutting API latency 35%.
+- **[Hybrid vs AI-Native: Why Developers Became Middle Management](/posts/2026-03-05-hybrid-vs-ai-native/)** — In hybrid orgs, developers relay intent between humans and AI. AI-native orgs cut out the relay.
+- **[Code Is a Lossy Format](/posts/2026-01-19-code-is-a-lossy-format/)** — Source code discards intent. LLMs expose the problem. Graph-based models fix it.
+- **[Beyond the Horseless Carriage](/posts/2026-02-05-beyond-the-horseless-carriage/)** — We're building AI that mimics human workflows. AI-native software should look like a living organism.
+- **[Beyond the Chat Window: UX on Steroids with LLMs](/posts/2026-02-28-beyond-the-chat-window/)** — Chat is the laziest AI integration. The real opportunity is components that remember users and act on context.
+- **[Context Engineering: The Skill That Actually Matters](/posts/2026-03-16-context-engineering/)** — Not prompt engineering. The discipline of deciding what goes into the context window, and why.
 
-**Earlier** (2010-2018): Led teams at SoftServe (Nissan Dealer360, BMC BRPM), Sony Mobile (serverless device management), Hero Gaming (4 casino platforms simultaneously).
+## Career Highlights
 
-## Technical Focus
+**Midnite** (Staff Engineer, Platform — 2025-Present): Overhauled secrets management and observability across AWS ECS. Migrated feature flags to Statsig, refactored monitoring to Datadog sidecar architecture.
 
-**Core**: Ruby/Rails (15+ years), AWS infrastructure, PostgreSQL, DevOps/CI/CD, multi-tenant SaaS architecture
+**StackAdapt** (Staff Engineer & Team Lead — 2024-2025): Led 8-person distributed team. Built the observability infrastructure that cut mean time to repair by 67%. Architected the GraphQL gateway that cut API response times by 40%.
 
-**Leadership**: Led teams of 4-15 developers, Agile delivery (Scrum Master certified), product collaboration, mentorship
+**Culture Amp** (Senior Engineer — 2023): Migrated 3M+ users from MongoDB to PostgreSQL with zero downtime — CQRS, Strangler Fig, feature flags. AWS costs dropped 30%.
 
-**Recent**: AI/ML integration (production models, LLM workflows), event-driven architectures, platform modernisation
+**Seek** (Senior Engineer — 2018-2021): Multi-region platform serving 2M+ users. Monolith-to-microservices migration via EventBridge and Lambda. Built ML spam detection running at 95% accuracy across millions of daily classifications.
 
-## Current Obsessions
+**Instacart** (Senior Engineer — 2023-2024): Led Ruby/Rails integration platform serving 20+ enterprise retail partners. Reduced partner onboarding from weeks to days.
 
-**AI-Native Architecture**: Building systems designed for intelligent agents. Exploring how LLMs can own modules, make decisions within constraints, and create self-evolving software.
+**Ferocia / Bendigo Bank** (Senior Engineer — 2022-2023): Built PayTo integration, Term Deposits, and real-time notifications for 400K+ active banking users.
 
-**Event-Driven Everything**: Moving from batch processing to event streaming. From snapshots to flows. From pull to push architectures.
-
-**Neurodivergent-Friendly Systems**: As someone with ADHD, I'm passionate about creating tools that amplify different thinking patterns. Checklists as external memory, automation that reduces cognitive load, systems that work with your brain.
-
-## Beyond the Code
-
-I believe in learning in public. The articles on this blog represent my thinking at specific moments — they evolve as I learn more.
-
-I'm fascinated by the intersection of technology and human behaviour. How does automation affect how we work? What happens when AI agents start owning code modules? How do we build systems that enhance human capabilities rather than replace them?
-
-## The Journey
-
-**20 years** of professional development across fintech, e-commerce, gaming, media, and AI tooling. From junior developer writing PHP to Staff Engineer designing distributed systems and leading architectural initiatives.
-
-The most valuable skills aren't technical — they're systems thinking, communication, mentorship, and adaptability.
-
-## What's Next
-
-Exploring the future of software development: AI agents that write and maintain their own code, event-driven architectures that respond to reality in real-time, and development workflows optimised for neurodivergent thinking patterns.
-
-The goal isn't just to build better software — it's to build software that makes humans more capable, creative, and fulfilled.
-
----
-
-## Work With Me
-
-If you're an engineering manager or CTO facing complex architectural challenges, I help teams build scalable, maintainable systems. **[Learn more about my consulting services →](/consulting/)**
+**Earlier** (2004-2017): Sony Mobile serverless platform, Hero Gaming (4 white-label casino platforms), SoftServe technical lead (Nissan, BMC), and 15+ freelance SaaS builds.
 
 ## Connect
 
-- **GitHub:** [@kukula](https://github.com/kukula)
-- **Twitter/X:** [@freerangetolic](https://twitter.com/freerangetolic)
-- **Email:** tolic@freerangetolic.com
+Building with AI agents? Thinking about AI-native architecture? I like comparing notes.
+
 - **LinkedIn:** [@tolic](https://www.linkedin.com/in/tolic/)
 - **Bluesky:** [@freerangetolic.com](https://bsky.app/profile/freerangetolic.com)
+- **GitHub:** [@kukula](https://github.com/kukula)
+- **Email:** tolic@freerangetolic.com
