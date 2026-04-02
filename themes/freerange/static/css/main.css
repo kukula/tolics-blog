@@ -554,6 +554,13 @@ code {
     opacity: 0.9;
 }
 
+.pin-icon {
+    width: 0.9rem;
+    height: 0.9rem;
+    vertical-align: -0.1rem;
+    stroke: currentColor;
+}
+
 .post-excerpt {
     line-height: 1.7;
     margin-bottom: var(--space-md);
