@@ -70,6 +70,7 @@ categories: ["Primary Category"]
 - Keep under 80 characters per line
 
 **Diagrams**:
+- Only use a diagram when it visualises a genuinely hard concept — a non-trivial system, data flow, state machine, or relationship that prose cannot carry cleanly. Simple lineages, lists, sequences of three or four items, and anything a sentence already explains do not earn a diagram. Default to prose; reach for Mermaid only when the picture does work words can't.
 - Use Mermaid (` ```mermaid `) instead of ASCII art — renders as SVG, responsive, and adapts to dark/light theme
 - Linear pipelines: use `flowchart TD` — keeps nodes full-width and readable on mobile
 - Branching graphs: use `flowchart LR` — branches stack vertically and stay narrow on mobile

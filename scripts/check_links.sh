@@ -10,7 +10,7 @@ for file in content/posts/*.md; do
 
     # Extract internal post links: [text](/posts/slug/)
     grep -oE '\[.*?\]\(/posts/[^)]+\)' "$file" | while IFS= read -r match; do
-        slug=$(echo "$match" | grep -oE '/posts/[^)]+' | sed 's|^/posts/||' | sed 's|/$||')
+        slug=$(echo "$match" | grep -oE '/posts/[^)]+' | sed 's|^/posts/||' | sed 's|#.*$||' | sed 's|/$||')
 
         # Look for a file matching *slug.md in content/posts/
         if ! ls content/posts/*"$slug".md &>/dev/null; then
