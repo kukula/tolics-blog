@@ -8,6 +8,7 @@ description: "Elixir and OTP offer actors as agents, supervision trees for failu
 tags: ["ai-agents", "software-architecture", "autonomous-systems", "resilience", "ai-operations"]
 categories: ["Software Architecture"]
 series: ["Living Software Framework"]
+illustration: "a foreman oversees robot workers arranged in a branching tree of scaffolding, each with its own mailbox. when one robot falls, another rises to take its place."
 ---
 
 The [previous post](/posts/2026-02-07-living-software-the-framework/) defined the framework — stability contracts, consequence graphs, conductors, event logs. This post asks: what runtime makes it real?

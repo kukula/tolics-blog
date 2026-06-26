@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["ai-agents", "ai", "best-practices", "design-patterns", "llms"]
 categories: ["Technology & Development"]
 description: "A-MEM's Zettelkasten-inspired approach to agent memory, and why software projects need federated memory with cross-domain linking — not one big vector database."
+illustration: "robots file cards into rows of cabinets connected by threads. a worker traces a thread between two distant drawers. gears turn overhead."
 ---
 
 Every AI coding agent has the same dirty secret: it starts each session with amnesia. Your agent knows how to write code, but it doesn't know *your* code, *your* architecture decisions, or *why* that one service is structured the way it is. Context windows are duct tape. The real fix is structured, persistent memory that evolves with your project.

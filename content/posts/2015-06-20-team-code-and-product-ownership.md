@@ -8,6 +8,7 @@ description: "Rethink traditional ownership models in software development. Lear
 tags: ["team-ownership", "code-quality", "product-management", "software-development", "organizational-design"]
 categories: ["Leadership"]
 series: ["Leadership and Teams"]
+illustration: "a small group of worker-figures together pushing one large gear inside a factory hall, a finished tower rising behind them."
 ---
 
 We divide ownership neatly: PMs own features, engineers own code, designers own UX. Then we wonder why products feel fragmented.

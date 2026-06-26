@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Chat is the laziest AI integration. The real opportunity is components that remember users and act on context they've already provided."
 tags: ["ai", "llms", "software-architecture", "product-management"]
 categories: ["AI and Development"]
+illustration: "robots behind a row of workbenches hand finished parts to workers before they ask. one small booth with a waiting line stands empty. gears turn."
 ---
 
 We've reduced the most powerful technology in a generation to a text box and a send button. Every product slaps on a chatbot and calls it "AI-powered." Chat is just one interaction pattern — and usually the laziest one.

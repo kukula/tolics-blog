@@ -8,6 +8,7 @@ description: "A proof-of-concept tool for graph-based system modelling — defin
 tags: ["software-architecture", "declarative-programming", "llms"]
 categories: ["Software Architecture"]
 series: ["Declarative Systems"]
+illustration: "a foreman builds a small model of a factory from rods and joints on a workbench. a robot checks each joint and stamps out test parts. the big factory hall stands behind them."
 ---
 
 We've established that [code is a lossy format](/posts/2026-01-19-code-is-a-lossy-format/), proposed [the self-validating graph](/posts/2026-01-20-the-self-validating-graph/) as a solution, and outlined [an incremental adoption path](/posts/2026-01-21-adopting-system-models-incrementally/). To explore these ideas further, this series includes a small proof-of-concept called Lattice. Here's what modelling, validating, and generating tests might look like in practice.

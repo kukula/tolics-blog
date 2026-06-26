@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "The automatic transmission didn't kill the gearbox — it abstracted it. The same thing is happening to code. The work didn't vanish. It moved up to intent."
 tags: ["ai", "abstractions", "requirements", "future-of-work", "software-development"]
 categories: ["Software Development"]
+illustration: "happy workers relaxing in the park. robots help people. factory in the background."
 ---
 
 The automatic transmission didn't kill the gearbox. It abstracted it.

@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "A 2025 study found Polish outperforms English in long-context LLM tasks. Ukrainian grammar instincts explain why — and how anyone can prompt better."
 tags: ["ai", "llms", "productivity", "learning"]
 categories: ["AI Engineering"]
+illustration: "a worker hands a small tight bundle of blocks to a robot at a press while a long tangled chain of parts sits unused on the conveyor belt."
 ---
 
 ## The Research

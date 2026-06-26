@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["adhd", "productivity", "software-development", "neurodivergent"]
 categories: ["Personal Development"]
 description: "Practical strategies for software engineers with ADHD to excel at detail-oriented work, manage risk, and turn attention challenges into superpowers."
+illustration: "a lone worker climbs scaffolding around a tall machine while figures below hold a net and tick items on a clipboard. gears and pistons turn in the factory hall."
 ---
 
 As a software engineer with inattentive ADHD, managing risk and catching details that could break systems presents unique challenges. However, with the right strategies and tools, it's not only manageable — it can become a superpower.

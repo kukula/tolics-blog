@@ -38,3 +38,4 @@ node_modules/
 hugo_stats.json
 
 .claude/
+env

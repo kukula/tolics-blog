@@ -8,6 +8,7 @@ description: "Deep focus and extractable attention are fundamentally opposed obj
 tags: ["productivity", "philosophy", "psychology", "organizational-design", "future-of-work"]
 categories: ["Philosophy"]
 series: ["By Design"]
+illustration: "bells, horns, and grabbing cranes pull a lone worker in every direction across a loud factory floor. one figure builds a walled booth to work quietly inside. machines crowd everyone else."
 ---
 
 Deep focus feels good. It connects to flow, autonomy, mastery — the things that correlate with genuine satisfaction. People know this intuitively, which is why books about reclaiming attention sell millions of copies.

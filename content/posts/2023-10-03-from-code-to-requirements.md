@@ -8,6 +8,7 @@ tags: ["declarative-programming", "ai", "software-development", "career", "futur
 categories: ["Software Development"]
 series: ["Declarative Systems", "AI and Autonomous Systems"]
 description: "AI is transforming software development from imperative coding to declarative problem-solving. Developers aren't being replaced — they're becoming solution architects."
+illustration: "an architect figure points at a blueprint while robots below assemble girders and turn cranes. small figures carry beams across the factory floor."
 ---
 
 The software development landscape is undergoing its most significant transformation since the shift from assembly to high-level languages. As AI tools become sophisticated, we're moving from writing detailed instructions to describing desired outcomes.

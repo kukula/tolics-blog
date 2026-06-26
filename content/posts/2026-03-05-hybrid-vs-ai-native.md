@@ -8,6 +8,7 @@ description: "In hybrid AI organisations, developers aren't above the stack — 
 tags: ["ai", "software-development", "ai-agents", "organizational-design", "future-of-work"]
 categories: ["AI and Development"]
 pinned: true
+illustration: "a worker passes buckets down a chain between two factory halls, spilling some along the way. above on a tower a foreman oversees the turning gears."
 ---
 
 ## The System

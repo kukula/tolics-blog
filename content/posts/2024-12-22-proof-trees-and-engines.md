@@ -8,6 +8,7 @@ description: "Discover how proof trees and proof engines enable declarative prog
 tags: ["declarative-programming", "ai", "software-development", "abstractions", "proof-systems"]
 categories: ["Programming Paradigms"]
 series: ["Declarative Systems"]
+illustration: "a worker climbs a branching staircase tower, choosing which steps lead up. a machine sorts parts onto the branches below. an archway opens at the top."
 ---
 
 Most programming feels like giving detailed instructions to a very literal assistant. This is **imperative programming** — you tell the computer exactly *how* to solve your problem.

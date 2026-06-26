@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Discover why double-entry bookkeeping, a 500-year-old accounting practice, is actually one of the most elegant software architecture patterns for building financial systems."
 tags: ["software-architecture", "design-patterns", "software-development", "database-design", "ecommerce"]
 categories: ["Software Architecture"]
+illustration: "worker-figures stack equal crates onto the two pans of a giant balance scale, gears and pipes behind them holding it level."
 ---
 
 Double-entry bookkeeping isn't just boring accounting  —  it's one of the most elegant software architecture patterns for handling money.

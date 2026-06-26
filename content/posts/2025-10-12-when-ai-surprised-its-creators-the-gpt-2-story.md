@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "How GPT-2's simple language prediction training led to unexpected capabilities like translation and reasoning that surprised its creators."
 tags: ["ai", "llms", "machine-learning", "chatgpt"]
 categories: ["AI and Autonomous Systems"]
+illustration: "workers plant a single seed into a small machine and step back surprised as it sprouts trees, birds, and turbines all at once. a robot waters the unexpected garden."
 ---
 
 In 2019, OpenAI trained GPT-2 with one goal: predict the next word. No instructions for translation, question-answering, or reasoning. Just billions of repetitions of "given these words, what comes next?"

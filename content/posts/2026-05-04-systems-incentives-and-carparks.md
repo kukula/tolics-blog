@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "A Malmö carpark, a Melbourne blackout, and the cheerful realisation that systems — not luck or geography — quietly decide what does and doesn't get built."
 tags: ["philosophy", "personal", "reflection"]
 categories: ["Life"]
+illustration: "a sun disc above a carpark where one canopy carries solar panels and the next stands bare, a small human figure looking up at them."
 ---
 
 It was January 2018, my first week in Australia, and the thing I remember most clearly — more clearly even than the heat — was the light. After five Swedish winters I had been carrying around a small private hunger for it, and Melbourne handed it back on the very first afternoon, generously, almost extravagantly.

@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "The agentic AI loop wasn't born in 2024. It was shipped from a Melbourne lab in 1991 — the BDI architecture — inspired by a Stanford philosopher's 1987 book."
 tags: ["ai", "ai-agents", "software-architecture", "philosophy", "reflection", "adhd"]
 categories: ["AI"]
+illustration: "a robot walks a looping conveyor track guided by a foreman holding a plan while gears and pistons turn, a factory tower in the background."
 ---
 
 Provocative claim. Bear with me.

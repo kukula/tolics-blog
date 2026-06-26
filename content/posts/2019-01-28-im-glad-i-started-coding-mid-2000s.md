@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "A nostalgic look at web development in the mid-2000s when the web was simpler, faster, and more human. Simpler times led to better software."
 tags: ["software-development", "ruby-on-rails", "reflection", "career"]
 categories: ["Career"]
+illustration: "a lone worker-figure at a wooden workbench builds a small machine by hand from a few simple parts. a calm factory hall with a few gears behind."
 ---
 
 Back then, the web felt different. Smaller, simpler — and a lot more magical.

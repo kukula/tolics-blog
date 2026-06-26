@@ -8,6 +8,7 @@ description: "Why asking the right questions and solving your own problems matte
 tags: ["software-development", "pragmatism", "software-architecture", "interviews", "problem-solving", "career"]
 categories: ["Software Engineering"]
 series: ["Software Architecture"]
+illustration: "a foreman figure picks up a simple sturdy hammer, turning away from an enormous overcomplicated machine of tangled pipes and cranes behind him."
 ---
 
 Software engineering is drowning in false signals. We optimise for the wrong metrics, test the wrong skills, and chase the wrong goals.

@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "When the wavefunction collapses because an AI observed it, consciousness has crossed the silicon threshold."
 tags: ["humour", "ai", "philosophy", "consciousness"]
 categories: ["Philosophy"]
+illustration: "a robot figure reaches out and touches a single floating sphere, and it splits into one solid ball. a worker and the robot stand as equals beneath a sun disc and mountains."
 ---
 
 When the wavefunction collapses because an AI observed it, consciousness has crossed the silicon threshold.

@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "SUMO tried to encode all of reality into first-order logic. Its directory listing is a philosophical argument most AI engineers have never encountered."
 tags: ["ai", "llms", "software-architecture", "philosophy", "abstractions"]
 categories: ["AI Engineering"]
+illustration: "a lone archivist figure files labeled boxes into a tall grid of shelves while a robot sorts more boxes off a conveyor belt."
 ---
 
 **The ambition: write down how the world works in a form a machine can reason over.**

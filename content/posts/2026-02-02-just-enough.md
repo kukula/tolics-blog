@@ -8,6 +8,7 @@ description: "Sweden's concept of lagom — just the right amount — reveals ho
 tags: ["philosophy", "psychology", "personal", "reflection"]
 categories: ["Philosophy"]
 series: ["Enough"]
+illustration: "worker-figures and families rest together under a sun disc while a foreman shares bread evenly from a basket. trees and a calm river stand behind them."
 ---
 
 I lived in Sweden for a few years. People ask about the design, the meatballs, the darkness. What struck me most was something invisible — the calm.

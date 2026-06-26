@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "ShellSpark compiles Spark-like Python queries into optimised Unix shell pipelines. 235x faster than Hadoop. On your laptop."
 tags: ["unix", "python", "performance", "data-engineering"]
 categories: ["Software Development"]
+illustration: "workers route water through parallel pipes that spin small fast turbines while one huge slow machine sits idle beside them. the streams flow straight to the output."
 ---
 
 In 2014, Adam Drake [analysed 2 million chess games](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html) to count player wins. The original approach used a 7-node Hadoop cluster. It processed data at 1.14 MB/sec. **Total time: 26 minutes.**

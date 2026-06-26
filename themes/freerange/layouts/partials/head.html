@@ -38,6 +38,21 @@
 <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
 {{ end }}
 
+{{/* Per-post cover as the social-share image. Emitted first so crawlers
+     prefer it over the site-wide default from the internal templates below.
+     Absolute URL is required — relative og:image is rejected by crawlers.
+     Served as JPEG (not WebP) for the widest crawler compatibility. */}}
+{{ with .File }}
+    {{ with resources.Get (printf "images/covers/%s.png" .ContentBaseName) }}
+    {{ $og := .Resize "1200x jpg" }}
+    <meta property="og:image" content="{{ $og.Permalink }}">
+    <meta property="og:image:width" content="{{ $og.Width }}">
+    <meta property="og:image:height" content="{{ $og.Height }}">
+    <meta name="twitter:image" content="{{ $og.Permalink }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{ end }}
+{{ end }}
+
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 

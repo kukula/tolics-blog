@@ -8,6 +8,7 @@ description: "Learn how to architect hybrid declarative systems that combine sym
 tags: ["hybrid-systems", "declarative-programming", "software-architecture", "ai", "proof-systems", "machine-learning"]
 categories: ["Software Architecture"]
 series: ["Declarative Systems"]
+illustration: "an architect figure stacks four factory floors connected by ladders and pipes. workers and robots pass parts between the levels. cranes lift the top floor into place."
 ---
 
 Back in 2012, I built medical software that tracked drug interactions and provided decision support doctors could review. It combined hard rules with statistical inference. Here's how I'd build it today.

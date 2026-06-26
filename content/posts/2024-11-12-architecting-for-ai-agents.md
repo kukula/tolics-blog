@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "When autonomous agents own modules, architecture shifts from crafting code to shaping living, self-healing systems that evolve without constant human intervention."
 tags: ["software-architecture", "ai-agents", "autonomous-systems", "self-healing", "event-driven"]
 categories: ["Software Architecture"]
+illustration: "robot figures tend separate machine halls connected by pipes and conveyor belts. a lone foreman watches from a walkway. a factory repairs itself in the background."
 ---
 
 We're no longer just writing code. We're designing for modules owned by autonomous agents.

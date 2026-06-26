@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "RAG pipelines leak PII through prompt injection. A substitution layer swaps real data for realistic fakes before it reaches the LLM, neutralising the attack."
 tags: ["ai", "llms", "software-architecture", "ai-operations"]
 categories: ["AI and Development"]
+illustration: "a gatekeeper figure fits masks onto people before they enter a large machine, then lifts the masks as they exit. pipes and a turbine fill the hall."
 ---
 
 Picture this. A property manager asks your AI assistant: "What's the status of the leak in Unit 4B?" Behind the scenes, your RAG pipeline pulls maintenance records, client contact details, and past correspondence — then ships it all to a shared LLM to generate a helpful summary. Names, phone numbers, emails, lease terms. All in plaintext. All passing through infrastructure you don't own.

@@ -8,6 +8,7 @@ description: "A personal reflection on ten years of web development consulting, 
 tags: ["personal", "career", "learning", "vim", "rust", "reflection", "ruby-on-rails"]
 categories: ["Personal"]
 series: ["Personal Reflections"]
+illustration: "a lone worker-figure sits on a bench beneath a snow-covered tree, tools and an open book resting beside them, a low sun disc over a small town."
 ---
 
 This winter I spent in a small New England town provided a much-needed slowdown. The quiet pace gave me time to think deeply about my life and career trajectory.

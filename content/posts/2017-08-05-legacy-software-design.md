@@ -5,6 +5,7 @@ author: "Tolic Kukul"
 tags: ["legacy-code", "software-architecture", "technical-debt", "refactoring"]
 series: ["Software Architecture"]
 description: "Learn why software becomes unmaintainable legacy code and practical strategies to prevent your systems from becoming the next developer nightmare."
+illustration: "worker-figures bolt extra wheels, pipes, and scaffolding onto a small motorcycle until it grows into a towering patched-together machine."
 ---
 
 You start a summer delivery business. Light cargo, perfect weather. A motorcycle makes perfect sense — fast, efficient, badass.

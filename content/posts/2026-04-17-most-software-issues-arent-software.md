@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "The real bottleneck in software development is not knowledge — it is processing. Ambiguity, cognitive load, and feedback latency are the upstream causes."
 tags: ["software-development", "team-productivity", "organizational-design", "productivity", "philosophy"]
 categories: ["Software Development"]
+illustration: "worker-figures and a robot untangle a knot of pipes into an orderly grid while a foreman pins a large diagram to the wall."
 ---
 
 Knowledge isn't the bottleneck anymore. How to build a distributed cache, how to set up CI/CD, how to structure a microservice — the answers are a search away. Or a prompt away. Twenty years ago, finding the answer was the hard part. Now it's everywhere.

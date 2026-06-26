@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Your default environment shapes your baseline. Living near nature and visiting the city beats the reverse — your normal state should be the one that restores you."
 tags: ["reflection", "philosophy", "personal"]
 categories: ["Philosophy"]
+illustration: "a lone figure stands among trees on a cliff above the sea. a city of towers and smokestacks rises in the far distance. birds cross a sun disc overhead."
 ---
 
 Something shifted for me recently. I noticed my neighbourhood — actually *noticed* it. The cliffs, the sea, the parks, the air that fills your lungs without resistance. I've been walking through it every day, but it took time for my nervous system to recalibrate enough to feel the difference.

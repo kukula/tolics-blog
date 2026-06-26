@@ -8,6 +8,7 @@ description: "Exploring the paradigm shift from imperative coding to declarative
 tags: ["declarative-programming", "hybrid-systems", "software-architecture", "ai", "autonomous-systems", "self-healing", "future-of-work"]
 categories: ["Software Architecture"]
 series: ["Declarative Systems"]
+illustration: "a lone foreman lowers his tools and raises a baton as machines, looms, and robots run the factory hall by themselves. the building grows new floors on its own."
 ---
 
 We're shifting from writing code to conducting systems. From imperative ("do this step") to declarative ("here's the goal, you figure it out"). Like SQL — nobody writes traversal algorithms; they declare what data they want.

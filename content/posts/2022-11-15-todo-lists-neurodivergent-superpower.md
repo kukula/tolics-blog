@@ -8,6 +8,7 @@ description: "Discover why TODO lists are more than productivity tools for neuro
 tags: ["neurodivergent", "adhd", "productivity", "personal", "software-development", "career"]
 categories: ["Personal"]
 series: ["Neurodivergent Engineering"]
+illustration: "a worker-figure sorts small blocks into neat rows on a tall scaffold, an external frame that holds the pieces. factory hall behind."
 ---
 
 I'm not just fond of TODO lists  —  I'm in love with them. As a neurodivergent engineer with ADHD, they're not a productivity hack. They're assistive technology.

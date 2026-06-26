@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "A practical six-level AI maturity framework for companies adopting AI. Assess strategic clarity, data readiness, and engineering capability to find your gaps."
 tags: ["ai", "enterprise", "scaling", "product-management"]
 categories: ["AI and Business"]
+illustration: "small human figures climb a tall staircase of platforms. each higher level holds more machines and working robots. a foreman measures the steps."
 ---
 
 *Where does your company actually sit on the AI spectrum — and does it matter?*

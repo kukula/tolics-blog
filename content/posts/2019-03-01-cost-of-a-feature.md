@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["software-development", "technical-debt", "maintenance", "product-management", "software-architecture"]
 categories: ["Software Development"]
 description: "Discover the hidden ongoing costs of software features that extend far beyond initial development. Learn to calculate true ROI and make better decisions."
+illustration: "workers install one small gear on a factory floor while a huge tangle of pistons and pipes runs unseen below the floor. small human silhouettes for scale."
 ---
 
 When we estimate a feature, we usually think about development time. But the real cost extends far beyond initial implementation. This is where [asking the right questions](/posts/2018-07-16-hype-vs-pragmatic-development/) becomes crucial.

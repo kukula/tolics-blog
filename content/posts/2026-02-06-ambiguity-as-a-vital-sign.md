@@ -8,6 +8,7 @@ description: "Traditional observability counts individual leaves. In a living sy
 tags: ["ai", "software-architecture", "autonomous-systems", "adaptive-systems", "philosophy"]
 categories: ["Software Architecture"]
 series: ["Living Software Framework"]
+illustration: "a lone foreman on a tower watches fog drift over some hills while others stay clear in the sun. workers and machines move through the valley below."
 ---
 
 If software becomes a living system — always evolving, adapting at multiple timescales, responding to stimulus rather than waiting for tickets — then traditional observability (logs, metrics, dashboards) is like trying to understand a forest by counting individual leaves. You need a different vital sign. Ambiguity is the metric that tells you where the system doesn't know what to grow into.

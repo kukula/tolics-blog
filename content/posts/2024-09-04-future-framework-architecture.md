@@ -8,6 +8,7 @@ description: "Building enterprise-grade AI with autonomous nodes, distributed in
 tags: ["ai", "software-architecture", "autonomous-systems", "self-healing", "distributed-systems", "enterprise", "event-driven", "resilience", "circuit-breaker"]
 categories: ["Software Architecture"]
 series: ["AI and Autonomous Systems"]
+illustration: "robots repair one of many connected machine-towers while the others keep running, linked by bridges and pipes. small figures watch from a grid of walkways."
 ---
 
 Traditional monolithic AI applications struggle with maintainability, debugging complexity, and cascading failures. When one component breaks, everything breaks.

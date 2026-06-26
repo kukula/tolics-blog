@@ -8,6 +8,7 @@ tags: ["ai", "software-development", "adaptive-systems", "machine-learning"]
 categories: ["Software Engineering"]
 series: ["AI and Autonomous Systems"]
 description: "AI enables applications that adapt, generate, and optimise themselves in real-time based on user needs and context — just-in-time software that writes itself."
+illustration: "a worker points at a press that stamps out a finished part on demand and a conveyor belt carries it straight to him. robots feed the machine in the factory hall."
 ---
 
 The software landscape is shifting. Where we once built monolithic applications handling every conceivable use case, AI now enables just-in-time (JIT) applications that dynamically adapt, generate, and optimise themselves based on real-time context.

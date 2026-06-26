@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Fifteen core AI concepts — from machine learning to agentic AI — each defined in a single sentence, ordered to build on each other into a mental model."
 tags: ["ai", "llms", "machine-learning", "ai-agents", "software-development"]
 categories: ["AI"]
+illustration: "worker-figures stack labeled blocks into a tall tower while a robot hands up the next piece, gears turning at the base."
 ---
 
 > If you can't explain it simply, you don't understand it.

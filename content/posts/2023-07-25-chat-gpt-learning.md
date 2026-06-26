@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["ai", "learning", "chatgpt"]
 categories: ["AI and Learning"]
 description: "Conversational AI like ChatGPT transforms learning with personalised explanations and instant clarification that beats traditional search methods."
+illustration: "a worker and a robot sit together on factory steps, the robot pointing up a tall staircase. an open book rests between them."
 ---
 
 I'm not sure if it's just me, but I absolutely love learning with ChatGPT.

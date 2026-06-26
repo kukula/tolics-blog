@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Enterprise software is everywhere, but what does it really mean? A practical guide to understanding when software truly deserves the enterprise label."
 tags: ["enterprise", "software-architecture", "software-development"]
 categories: ["Software Architecture"]
+illustration: "a foreman figure connects one new machine to a vast hall of old towers and tangled pipes, cranes overhead. small human silhouettes for scale."
 ---
 
 "We need an enterprise solution," the CTO announced.

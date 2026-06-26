@@ -8,6 +8,7 @@ description: "What would a programming language designed for AI look like? The t
 tags: ["ai", "declarative-programming", "software-architecture", "llms", "proof-systems"]
 categories: ["AI and Development"]
 series: ["AI-Native Programming"]
+illustration: "a robot and a worker forge new tools and gears at an anvil. unfamiliar machine parts pile around them in a factory hall."
 ---
 
 What would happen if we let AI design a programming language optimised for itself rather than for human readability? The thought experiment quickly reveals some of the deepest unsolved problems in computer science — and points toward probabilistic programming as a practical stepping stone.

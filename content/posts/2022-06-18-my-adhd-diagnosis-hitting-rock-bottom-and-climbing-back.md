@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "A personal journey through mental health collapse, ADHD diagnosis, and recovery. How understanding neurodivergence changed everything and saved my life."
 tags: ["adhd", "personal", "neurodivergent", "reflection"]
 categories: ["Personal"]
+illustration: "a worker-figure climbs a tall ladder out of a deep pit toward a sun disc. broken gears lie at the bottom of the pit."
 ---
 
 I was recently diagnosed with ADHD. It feels strange to type those words.

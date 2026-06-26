@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "AI-native is more than a buzzword. It marks a real architectural shift where AI becomes the foundation, not a feature bolted on."
 tags: ["ai", "software-architecture", "llms", "ai-agents", "abstractions"]
 categories: ["AI and Development"]
+illustration: "a foreman points as robots lay the foundation of a new factory hall. workers climb ladders between the rising levels. gears turn at the base."
 ---
 
 There's a term floating around job postings and pitch decks that sounds like marketing fluff: **AI-native**. It isn't. It points to a real architectural shift — one worth understanding.

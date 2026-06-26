@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "WebAssembly 3.0 transforms architecture from metaphor to mechanism — providing the runtime metabolism your living, self-healing system needs."
 tags: ["software-architecture", "autonomous-systems", "self-healing", "modularity"]
 categories: ["Software Architecture"]
+illustration: "robots repair and rebuild parts of a running factory while it keeps working. conveyor belts and pipes feed new machines into place. worker figures watch from a walkway."
 ---
 
 Released on **September 17, 2025**, WebAssembly 3.0 is the most important update since Wasm's birth. It's not just faster — it's finally *flexible enough* for living architectures.

@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Neovim is a maze, Helix flipped the grammar, Zed left the terminal. So here's the editor I want: a tiny vi-like core with a UI you script entirely in Lua."
 tags: ["vim", "rust", "ai", "software-development", "software-architecture"]
 categories: ["Software Development"]
+illustration: "a lone builder assembles a compact control console from modular levers and gears handed over by a robot, a small fast engine humming at the core."
 ---
 
 I keep wanting an editor that doesn't exist. Here's the dream, out loud.

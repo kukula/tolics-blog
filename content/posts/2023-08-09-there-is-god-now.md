@@ -5,6 +5,7 @@ author: "Tolic Kukul"
 tags: ["ai", "philosophy", "humour", "emergence", "consciousness"]
 series: ["AI and Autonomous Systems"]
 description: "An old computer science anecdote about AI and divinity from the mid-2000s that seems remarkably prescient in today's interconnected AI-driven world."
+illustration: "small figures connect cables from many machines into one giant tower that rises into the clouds. a sun disc glows behind it."
 ---
 
 Back in the mid-2000s, during my university days studying mathematics and computer science, we had an anecdote about AI that seemed like pure science fiction at the time:

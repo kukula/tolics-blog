@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Most teams have no idea if their AI workflow investments are paying off. Here's what to actually measure instead of relying on vibes and excitement."
 tags: ["ai", "team-productivity", "management", "software-development", "best-practices"]
 categories: ["AI and Development"]
+illustration: "a foreman reads the dials and gauges on a humming machine while workers cheer beside it. one needle sits flat. gears and pistons turn."
 ---
 
 Every second dev manager I talk to these days tells me the same thing.

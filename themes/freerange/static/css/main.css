@@ -544,6 +544,18 @@ code {
     border: none;
 }
 
+/* Cover illustration — sits above the post header (3:2 hero) */
+.post-cover {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin-bottom: 1.25rem;
+    border: var(--border-medium) solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+}
+
 .post-content {
     padding: 0;
     max-width: 65ch;

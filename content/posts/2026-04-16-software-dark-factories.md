@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Dark factories are coming to software. The shift from artifact-centric correctness to scenario-driven validation changes what you build and maintain."
 tags: ["ai", "ai-agents", "software-architecture", "autonomous-systems", "software-development"]
 categories: ["AI Engineering"]
+illustration: "robots build machines on conveyor belts in a dark factory hall while a lone foreman watches from a walkway above."
 ---
 
 A dark factory is a manufacturing line that runs without humans in the work itself. Fully automated production, lights off, humans present only for maintenance and diagnostics. The concept is older than most people realise — robots have been building robots on unsupervised lines since 2001.

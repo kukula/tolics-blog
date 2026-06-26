@@ -7,6 +7,7 @@ tags: ["product-management", "software-development", "claude-code", "design-patt
 categories: ["Product Development"]
 author: "Tolic Kukul"
 description: "Start with user experience, not developer convenience. Learn how vision-driven development with Claude Code creates products users actually want."
+illustration: "an architect figure points at a glowing sun disc on the horizon while a robot and workers build a clean simple archway toward it. small human silhouettes walk through easily."
 ---
 
 We build forms with 15 fields because "we need the data." We bury features three menus deep because "that's where it logically belongs." We optimise for our convenience, not theirs.

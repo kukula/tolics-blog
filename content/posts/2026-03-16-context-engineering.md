@@ -8,6 +8,7 @@ description: "Context engineering — not prompt engineering — is where the re
 tags: ["ai", "llms", "ai-agents", "software-development", "best-practices"]
 categories: ["AI Engineering"]
 series: ["Working With LLMs"]
+illustration: "a worker carefully packs only the needed tools into a single crate, leaving a pile aside. a robot waits at the press to begin. pipes feed the machine."
 ---
 
 Everyone's been talking about prompt engineering — the right words, the magic incantations. It's not useless, but it's not where the leverage is either. The thing that actually matters is context engineering.

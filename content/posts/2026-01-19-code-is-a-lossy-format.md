@@ -8,6 +8,7 @@ description: "Source code is a lossy format that discards intent. LLMs expose th
 tags: ["software-architecture", "declarative-programming", "ai", "llms"]
 categories: ["Software Architecture"]
 series: ["Declarative Systems"]
+illustration: "an architect holds a large blueprint while a press flattens it into one small metal part. worker figures study the part and try to rebuild the original machine."
 ---
 
 For decades, we have conflated programming with typing code. In reality, typing was never the hard part. The real work lies in understanding domains, modelling systems, and making tradeoffs under constraints. Source code is simply how these decisions get serialised into something a machine can execute — and it is a lossy format.

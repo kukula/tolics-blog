@@ -8,6 +8,7 @@ description: "How RLHF trains models to seek clarification instead of guessing â
 tags: ["ai", "llms", "machine-learning", "requirements", "software-development"]
 categories: ["AI Engineering"]
 series: ["Working With LLMs"]
+illustration: "a robot raises a hand to ask the foreman a question while worker-figures wait at a conveyor belt before starting the machine."
 ---
 
 Given an ambiguous request, a well-trained model asks for clarification rather than barrel forward with assumptions. That behaviour isn't scripted. It's trained. And understanding how it got there tells you something useful about your own work.

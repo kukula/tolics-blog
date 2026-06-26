@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Transform anxiety through mental prompt engineering. Learn to reframe perspective, release guilt, and become the architect of your experience."
 tags: ["personal", "psychology", "neurodivergent", "productivity", "philosophy"]
 categories: ["Personal Development"]
+illustration: "a lone figure stands at a panel of levers and gears whose pipes loop back around to them. a sun disc rises over trees behind."
 ---
 
 We talk about prompt engineering for AI, but what about prompt engineering ourselves? Our minds run on internal narratives — stories about who we are, what we're responsible for, and how the world works. What if we could rewrite these prompts?

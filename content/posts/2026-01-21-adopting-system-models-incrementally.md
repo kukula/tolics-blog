@@ -8,6 +8,7 @@ description: "Practical guide to adopting graph-based system models incrementall
 tags: ["software-architecture", "declarative-programming", "ai", "llms"]
 categories: ["Software Architecture"]
 series: ["Declarative Systems"]
+illustration: "workers raise a scaffolding tower above a factory floor one level at a time. a foreman points to the plan while a robot lays parts below. the first sections stand finished."
 ---
 
 LLMs operate downstream of the model. Their role is to propose code that conforms to the graph and satisfies generated tests. They are not trusted to preserve invariants — the model enforces them.

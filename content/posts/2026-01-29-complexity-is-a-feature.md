@@ -8,6 +8,7 @@ description: "Complexity often isn't a bug — it's a feature that benefits inte
 tags: ["software-architecture", "philosophy", "organizational-design", "technical-debt"]
 categories: ["Software Architecture"]
 series: ["By Design"]
+illustration: "workers keep bolting more gears and pipes onto an ever-growing maze of machinery. a gatekeeper figure guards the only bridge over the moat. one lone architect points at the foundation."
 ---
 
 For over a thousand years, Ptolemy's geocentric model of the universe predicted planetary positions well enough for navigation and agriculture. The price? An ever-growing system of "epicycles" — circles upon circles upon circles, each patch compensating for the fundamental error of placing Earth at the center.

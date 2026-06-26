@@ -8,6 +8,7 @@ tags: ["ai-agents", "automation", "startup-tools", "sops", "llms", "crewai", "au
 series: ["AI and Autonomous Systems"]
 description: "Learn how to build AI assistants that act like real employees using SOPs, LLMs, and automation frameworks like CrewAI and AutoGen for business automation."
 categories: ["AI and Business"]
+illustration: "robots stand at workstations along a conveyor belt, each handling a task, while a human foreman walks the line. people work alongside them in the factory hall."
 ---
 
 Imagine having a legal assistant who drafts contracts, a project manager that never misses deadlines, or a marketer that writes your blog posts  —  without hiring anyone.

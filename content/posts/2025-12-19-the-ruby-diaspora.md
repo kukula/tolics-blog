@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "How Ruby's community created Node.js, Elixir, Express.js, Flask, Laravel, and other technologies that define modern development."
 tags: ["ruby-on-rails", "software-development", "philosophy", "career"]
 categories: ["Technology"]
+illustration: "worker figures leave one factory hall and build new factories across a valley. each new hall runs the same gears and looms. bridges connect them all."
 ---
 
 Ruby may have faded from the headlines, but its fingerprints are everywhere.

@@ -5,6 +5,7 @@ author: "Tolic Kukul"
 tags: ["psychology", "communication", "wisdom", "self-awareness", "philosophy"]
 series: ["Personal Reflections"]
 description: "Discover why true wisdom means resisting the urge to rationalize troubling behaviour with wise-sounding explanations that make everyone feel comfortable."
+illustration: "a lone worker-figure stands firm on a pedestal, one hand raised to refuse a polished mask held up by a crowd of small figures below."
 ---
 
 When someone tells me my phrase sounds wise, I pause. Am I justifying behaviour I don't actually support or understand?

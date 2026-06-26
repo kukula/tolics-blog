@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Exploring a nature-based spirituality grounded in physics, quantum consciousness, and the profound mystery of conscious existence in a participatory universe."
 tags: ["philosophy", "personal", "reflection"]
 categories: ["Philosophy"]
+illustration: "a lone figure stands on a mountain looking up at a great sun disc and stars. a river and trees below, birds in the sky."
 ---
 
 We are storytelling creatures. Since we first gathered around fires, humans have crafted narratives to make sense of existence. Today, many argue consumerism has become our de facto religion. But I find myself drawn to an older story — one written in the very fabric of reality itself.

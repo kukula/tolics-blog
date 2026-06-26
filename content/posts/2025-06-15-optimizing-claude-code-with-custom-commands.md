@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Transform your bloated CLAUDE.md into a concise guide that Claude Code actually follows. Learn the secrets from top developers who get 10x better results."
 tags: ["claude-code", "ai", "productivity", "software-development"]
 categories: ["Software Development"]
+illustration: "a worker trims a tall tangled pile of paper into a small neat stack of cards. a robot reads the cards and moves faster along a conveyor belt. gears spin smoothly."
 ---
 
 My CLAUDE.md file was 300+ lines of verbose documentation that Claude Code routinely ignored. Sound familiar?

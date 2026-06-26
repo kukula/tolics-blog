@@ -8,6 +8,7 @@ description: "Explore how combining proof trees with machine learning creates hy
 tags: ["declarative-programming", "ai", "machine-learning", "hybrid-systems", "proof-systems"]
 categories: ["Programming Paradigms"]
 series: ["Declarative Systems"]
+illustration: "a branching staircase tower joins a humming round turbine by a bridge. a worker and a robot shake hands where they meet. gears turn between them."
 ---
 
 In my previous article, I explored proof trees: how declarative languages like Prolog break down questions into smaller steps until they can be answered with known facts. It's structured, logical, and explainable.

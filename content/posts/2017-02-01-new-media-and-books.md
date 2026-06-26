@@ -5,6 +5,7 @@ author: "Tolic Kukul"
 tags: ["media", "learning", "information", "evolution", "cognition"]
 series: ["Personal Reflections"]
 description: "Challenge the assumption that books are superior to modern media. Discover why new media formats might be better for learning and information consumption."
+illustration: "a worker-figure crosses bridges linking several towers, a book under one arm, birds and a sun disc overhead."
 ---
 
 "We've forgotten how to read books! Our attention spans are too short!"

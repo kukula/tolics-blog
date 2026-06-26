@@ -5,6 +5,7 @@ author: "Tolic Kukul"
 tags: ["event-streaming", "batch-processing", "software-architecture", "real-time-systems", "data-processing", "strangler-fig"]
 series: ["Software Architecture"]
 description: "A real-world story of migrating from brittle batch processing to event-driven architecture using the strangler fig pattern. Learn practical migration strategies."
+illustration: "workers build new pipes and turbines around an old conveyor belt, vines and trees wrapping the old machine as the work moves over to the new line. factory hall."
 ---
 
 At Jora, we used to rely heavily on a big legacy batch-processing pipeline — and I mean **really** batch. Think nightly jobs, full-day downtimes for tiny DB migrations, and that sinking feeling when one bad record caused the whole thing to silently fail halfway through.

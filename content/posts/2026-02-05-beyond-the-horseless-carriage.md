@@ -8,6 +8,7 @@ description: "We build AI systems that mimic human workflows. AI-native software
 tags: ["ai", "ai-agents", "software-architecture", "autonomous-systems", "future-of-work"]
 categories: ["Software Architecture"]
 series: ["Living Software Framework"]
+illustration: "human figures and robots step away from a conveyor belt and tend a growing tree. a factory hall stands in the background."
 ---
 
 Every major paradigm shift goes through a skeuomorphic phase — cars were called "horseless carriages," early websites looked like printed pages, and now we're building AI systems that mimic the way humans already work.

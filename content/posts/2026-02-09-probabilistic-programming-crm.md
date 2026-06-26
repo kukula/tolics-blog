@@ -8,6 +8,7 @@ description: "Probabilistic lead scoring with Pyro replaces brittle point system
 tags: ["ai", "declarative-programming", "software-architecture", "llms", "hybrid-systems"]
 categories: ["AI and Development"]
 series: ["AI-Native Programming"]
+illustration: "a robot weighs small human silhouettes on a balance scale and sorts them into bins. a worker reads gauges with wide and narrow needles."
 ---
 
 In the previous post we explored what a programming language designed for AI might look like and hit three walls — the training data problem, the interpreter problem, and the bootstrapping paradox. We ended with probabilistic programming as the practical bridge. This post takes that bridge and walks across it into something you can build today.

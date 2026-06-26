@@ -8,6 +8,7 @@ description: "Learn why the best managers are invisible like good referees. Disc
 tags: ["management", "leadership", "team-productivity", "organizational-design"]
 categories: ["Leadership"]
 series: ["Leadership and Teams"]
+illustration: "a foreman figure quietly lifts a fallen beam off a conveyor belt while worker-figures keep the machines running around them."
 ---
 
 A good referee is invisible on the field. The same goes for management.

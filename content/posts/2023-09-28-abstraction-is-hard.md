@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["abstractions", "software-architecture", "design-patterns", "composition", "code-quality"]
 categories: ["Software Architecture"]
 description: "Creating good abstractions is one of software development's hardest challenges. Learn when to abstract, when not to, and how to avoid costly mistakes."
+illustration: "a foreman stacks mismatched blocks into a leaning tower while a low sturdy wall of fitted blocks stands beside it. ladders lean against both."
 ---
 
 I learned abstraction through examples of rectangles and lines, like probably many of you did. I spent time thinking abstractly about abstraction based on class names and story titles.

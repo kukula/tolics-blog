@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Fixed pipelines over-process simple requests and under-process complex ones. An adaptive router classifies intent and dispatches to specialised workflows."
 tags: ["ai", "ai-agents", "software-architecture", "software-development", "autonomous-systems"]
 categories: ["AI and Development"]
+illustration: "a foreman at a sorting station directs parts onto different conveyor belts. robots work each belt. cranes lift the finished pieces."
 ---
 
 The promise of autonomous AI coding agents is seductive: describe what you want, walk away, come back to a PR. The reality in early 2026 is more nuanced — but the gap between promise and practice is closing fast. After researching the latest approaches and building my own multi-agent system, I've arrived at a practical architecture that handles everything from "hey, what does this module do?" to "build me a new authentication system."

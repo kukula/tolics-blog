@@ -8,6 +8,7 @@ description: "Graph-based system models validate themselves through structural c
 tags: ["software-architecture", "declarative-programming", "ai", "llms"]
 categories: ["Software Architecture"]
 series: ["Declarative Systems"]
+illustration: "a machine inspects and tightens its own gears as it runs. a worker plants small flags on the parts that are unclear. the scaffolding holds itself together."
 ---
 
 Raising the abstraction only matters if it can be implemented incrementally. A graph-based system model does not replace source code — it sits above it as a coordinating layer.

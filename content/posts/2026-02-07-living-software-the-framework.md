@@ -8,6 +8,7 @@ description: "Stability contracts, consequence graphs, immutable event logs, and
 tags: ["software-architecture", "ai-agents", "autonomous-systems", "self-healing", "design-patterns"]
 categories: ["Software Architecture"]
 series: ["Living Software Framework"]
+illustration: "a conductor figure on a platform directs robots working among gears and conveyor belts. a wall of carved stone tablets stands behind them."
 ---
 
 The previous posts explored [what AI-native software could look like](/posts/2026-02-05-beyond-the-horseless-carriage/) and [how ambiguity becomes its vital sign](/posts/2026-02-06-ambiguity-as-a-vital-sign/). The vision is clear enough: software as a living system, not a factory pipeline. Express intent, let AI handle the translation layers, evolve continuously within safety bounds.

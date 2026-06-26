@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["ruby-on-rails", "enterprise", "software-development", "scaling", "team-productivity"]
 categories: ["Software Development"]
 description: "Ruby on Rails is simultaneously perfect and terrible for enterprise applications, depending on whether you optimise for speed or predictability."
+illustration: "a foreman figure stands between two factory halls. in one, workers build fast with a light nimble machine. in the other, a slow heavy press grinds on."
 ---
 
 Rails is awesome for enterprise. Rails is awful for enterprise.

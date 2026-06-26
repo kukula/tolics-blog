@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["interviews", "hiring", "career", "talent-management"]
 categories: ["Career"]
 description: "Technical interviews test everything except what matters for the job. Developers need talent agents like actors and writers to fix the broken hiring process."
+illustration: "a worker-figure balances on a narrow platform juggling many tools and gears while a row of seated figures watches under a bright lamp."
 ---
 
 Interviews are hard. Not because the technical problems are difficult, but because they test everything except what actually matters for the job.

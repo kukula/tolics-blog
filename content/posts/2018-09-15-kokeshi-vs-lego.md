@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 tags: ["software-architecture", "design-patterns", "modularity", "abstractions"]
 categories: ["Software Architecture"]
 description: "Two fundamental software architecture approaches: nested abstractions like Russian dolls versus composable pieces like Lego blocks. Learn when to use each."
+illustration: "two worker-figures build side by side. one stacks nested towers into a single tall column. the other assembles small blocks into a bridge. factory hall behind them."
 ---
 
 There are two fundamental approaches to building software systems: the Kokeshi doll model and the Lego model.
