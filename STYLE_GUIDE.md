@@ -1,5 +1,7 @@
 # Tolic's Engineering Mind - Blog Style Guide
 
+**Golden example**: `content/posts/2026-06-25-the-future-vi-editor-with-own-ui.md` — the reference for voice, rhythm, and structure described below.
+
 ## Front Matter
 
 Every post requires:
@@ -29,6 +31,7 @@ categories: ["Primary Category"]
 - "Good ideas rarely need permission."
 - "We've learned that momentum is fragile."
 - Confident, not forceful — replace "you must" with "you can"
+- First-person and personal is welcome — own the opinion: "I keep wanting an editor that doesn't exist. Here's the dream, out loud." The ban is on *hedging* ("I think", "maybe"), not on "I".
 
 **Purpose**: Illuminate, not argue
 - Reflective and thoughtful, not preachy
@@ -47,11 +50,12 @@ categories: ["Primary Category"]
 **Formatting**:
 - Active voice
 - Simple sentences, sophisticated vocabulary (deliberate, inevitable, clarity, substance)
-- Bold key concepts sparingly
+- Sentence fragments are encouraged for rhythm and emphasis: "Something tiny. Fast. Bare bones. Like vi." and "Glue, not invention." Use them deliberately to land a beat, not as a crutch.
+- Bold key concepts sparingly; italics for a single word of emphasis ("read and write your *entire* editor")
 - Use spaces around em dashes: "idea — the next" not "idea—the next"
 - Australian English: organise, realise, colour, favour, centre
 
-**Avoid**: "I think", "maybe", "in some cases", "you must", "that's wrong", jargon without explanation, markdown tables (convert to prose or bullet lists — tables render poorly on mobile and in RSS), vendor-specific tool comparisons (they age fast — fold into a single sentence if essential)
+**Avoid**: "I think", "maybe", "in some cases", "you must", "that's wrong", jargon without explanation, markdown tables (convert to prose or bullet lists — tables render poorly on mobile and in RSS), vendor-specific *feature, version, or pricing* comparisons (they age fast — fold into a single sentence if essential). Comparing tools' *architecture or design philosophy* to frame a point is fine and often illuminating — e.g. contrasting Neovim, Helix, and Zed to locate the gap a new idea fills.
 
 ---
 
@@ -62,6 +66,7 @@ categories: ["Primary Category"]
 - H2: Main sections
 - H3: Subsections within H2
 - Never skip levels (H1→H3 is wrong)
+- Prefer short, evocative section titles over generic ones: "The itch", "The vision", "Why now", "The pitch in one line" — not "Introduction", "Background", "Conclusion". Keep them concrete.
 
 **Code blocks**:
 - Always specify language: ` ```python `
@@ -148,4 +153,4 @@ categories: ["Primary Category"]
 
 ---
 
-Last updated: 2026-02-22
+Last updated: 2026-06-26
