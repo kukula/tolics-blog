@@ -9,19 +9,23 @@ Every post requires:
 ```yaml
 ---
 title: "Your Post Title: Add Subtitle for Clarity"
-date: 2025-08-04
-lastmod: 2025-08-04
+date: 2026-08-04
+lastmod: 2026-08-04
 draft: false
 author: "Tolic Kukul"
 description: "SEO-friendly description (150-160 chars with main keywords)"
 tags: ["primary-tag", "secondary-tag", "tertiary-tag"]
 categories: ["Primary Category"]
+series: ["Series Name"]   # optional — omit for standalone posts
 ---
 ```
 
 **File naming**: `YYYY-MM-DD-post-title-slug.md`
-- Date prefix syncs automatically to front matter dates
+- The date prefix sets `date` (publication date) in front matter
 - Run `./sync_dates.sh` after renaming files
+- `date` is set once and left alone. `lastmod` is updated by hand whenever a published post changes materially — a correction, an added section, a reworked argument. Trivial typo fixes don't earn a `lastmod` bump.
+
+**Series**: Use `series` only when a post is one instalment of a deliberate run that readers benefit from navigating as a set — "AI Tech in One Sentence", a multi-part deep-dive. A post that merely shares a theme with others is not a series; tags already carry that. Name the series exactly as it should display, in title case, and keep it identical across every instalment — Hugo groups on the literal string. One series per post.
 
 ---
 
@@ -68,6 +72,12 @@ categories: ["Primary Category"]
 - Never skip levels (H1→H3 is wrong)
 - Prefer short, evocative section titles over generic ones: "The itch", "The vision", "Why now", "The pitch in one line" — not "Introduction", "Background", "Conclusion". Keep them concrete.
 
+**Images**:
+- Every image requires alt text that describes its content or function, not its filename: `![A vi buffer splitting into two panes](…)` not `![screenshot](…)`
+- If an image is purely decorative, give it empty alt (`![]()`) so screen readers skip it — don't describe ornament
+- Alt text is a complete phrase, not keyword soup; it reads as a sentence to someone who can't see the image
+- Diagrams count: a Mermaid diagram solving a hard concept should be introduced in prose that conveys the same point, since the SVG isn't reliably read aloud
+
 **Code blocks**:
 - Always specify language: ` ```python `
 - Add comments for clarity
@@ -107,8 +117,23 @@ categories: ["Primary Category"]
 - Hyphens for multi-word: `software-architecture`
 - 3-6 tags per post
 - Use standardised tags (see full list in appendix)
+- Tag slugs are canonical identifiers; once published, prefer keeping a slug stable over correcting its spelling, to avoid breaking URLs.
 
 **Common tags**: `ai`, `software-development`, `software-architecture`, `design-patterns`, `code-quality`, `career`, `productivity`, `rust`, `ruby-on-rails`
+
+---
+
+## Categories
+
+Exactly one category per post — the primary lens a reader would file it under. Categories are broad and few; tags are specific and many. Use only these:
+
+- **AI** — models, agents, the field and its philosophy
+- **Software** — engineering, architecture, code quality, tooling
+- **Philosophy** — ideas, ethics, epistemology, meaning
+- **Fiction** — speculative and short fiction
+- **Personal** — reflection, spirituality, life
+
+Don't invent new categories per post. If something genuinely doesn't fit, that's a signal to reconsider the list deliberately — not to add a one-off.
 
 ---
 
@@ -117,12 +142,16 @@ categories: ["Primary Category"]
 - [ ] All required front matter fields present
 - [ ] Description is 150-160 characters
 - [ ] 3-6 tags from standardised list
+- [ ] Exactly one category from the closed list
+- [ ] `series` set if part of a run, omitted otherwise
 - [ ] Heading hierarchy correct (no skipped levels)
+- [ ] Every image has meaningful alt text (or empty alt if decorative)
 - [ ] Code examples tested and commented
 - [ ] Australian English spelling
 - [ ] Spaces around em dashes
 - [ ] Clear value proposition in first paragraph
 - [ ] Strong closing — reflective, assertive, or both
+- [ ] `lastmod` bumped if this is a material edit to a published post
 - [ ] Internal links verified (`./scripts/check_links.sh`)
 - [ ] External links verified (`./scripts/check_external_links.sh`)
 
@@ -143,7 +172,7 @@ categories: ["Primary Category"]
 `code-quality`, `technical-debt`, `legacy-code`, `maintenance`, `refactoring`, `strangler-fig`
 
 ### Business & Organisation
-`enterprise`, `scaling`, `product-management`, `requirements`, `team-ownership`, `organizational-design`, `management`, `leadership`, `team-productivity`
+`enterprise`, `scaling`, `product-management`, `requirements`, `team-ownership`, `organisational-design`, `management`, `leadership`, `team-productivity`
 
 ### People & Skills
 `career`, `learning`, `interviews`, `hiring`, `talent-management`, `neurodivergent`, `adhd`, `productivity`
