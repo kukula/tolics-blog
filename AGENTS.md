@@ -16,7 +16,8 @@ Bluesky.
 - `content/posts/*.md` — posts, **flat files** with YAML front matter (no leaf
   bundles). `content/about.md`, `content/search.md` — standalone pages.
 - `themes/freerange/` — the theme. CSS is one file:
-  `themes/freerange/static/css/main.css`. Templates in
+  `themes/freerange/assets/css/main.css` (processed via `resources.Get` →
+  minify → fingerprint in `partials/head.html`). Templates in
   `themes/freerange/layouts/` (`_default/single.html`, `_default/list.html`,
   `index.html`, `partials/`).
 - `assets/images/covers/<ContentBaseName>.webp` — per-post cover masters

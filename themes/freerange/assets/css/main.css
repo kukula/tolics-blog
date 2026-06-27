@@ -609,7 +609,7 @@ code {
     top: 0;
     right: 0;
     z-index: 2;
-    margin: var(--space-xl) var(--space-xl) var(--space-lg);
+    margin: var(--space-2xs) var(--space-sm) var(--space-sm);
     text-align: right;
     color: var(--color-white);
     font-weight: 700;
@@ -630,10 +630,12 @@ code {
     margin-bottom: 0;
 }
 
+/* Narrow screens: more height so the bottom title plate clears the top-right meta. */
 @media (max-width: 480px) {
-    .post-card--cover .post-card-link { min-height: 16rem; }
-    .post-card--hero .post-card-link { min-height: 20rem; }
+    .post-card--cover .post-card-link { min-height: 22rem; }
+    .post-card--hero .post-card-link { min-height: 26rem; }
     .post-card--hero .post-title { font-size: 1.8rem; }
+    .post-card--cover .post-header { padding-bottom: var(--space-xs); }
 }
 
 .post-content {
