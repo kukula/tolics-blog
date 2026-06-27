@@ -1,0 +1,15 @@
+{{- /*
+  The one article-list layout: a column of post cards followed by pagination.
+  Shared by the homepage, section lists, and taxonomy term pages so every list
+  of articles looks identical and can't drift. Context (.) is a Hugo Paginator —
+  the caller decides WHICH posts (build the paginator), this decides how they LOOK.
+  Call as: {{ partial "post-list.html" (.Paginate $somePages) }}
+*/ -}}
+{{- $paginator := . -}}
+<div class="post-list">
+    {{ range $paginator.Pages }}
+        {{ partial "post-card.html" . }}
+    {{ end }}
+
+    {{ partial "pagination.html" $paginator }}
+</div>

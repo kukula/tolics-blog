@@ -32,7 +32,18 @@
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}">
 
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+{{/* Fonts: preconnect to shave the TLS/DNS handshake, then load the
+     stylesheet directly in <head> so it's discovered immediately (an @import
+     inside main.css would chain it behind the CSS download + parse). */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:wght@400;700&display=swap">
+
+{{/* Site CSS through Hugo Pipes: minify (static/ files are copied verbatim and
+     never minified, even with hugo --minify) + fingerprint for far-future
+     caching and integrity. */}}
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 {{ if .Site.Params.favicon }}
 <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
@@ -43,7 +54,8 @@
      Absolute URL is required — relative og:image is rejected by crawlers.
      Served as JPEG (not WebP) for the widest crawler compatibility. */}}
 {{ with .File }}
-    {{ with resources.Get (printf "images/covers/%s.png" .ContentBaseName) }}
+    {{ $base := .ContentBaseName }}
+    {{ with or (resources.Get (printf "images/covers/%s.webp" $base)) (resources.Get (printf "images/covers/%s.png" $base)) }}
     {{ $og := .Resize "1200x jpg" }}
     <meta property="og:image" content="{{ $og.Permalink }}">
     <meta property="og:image:width" content="{{ $og.Width }}">

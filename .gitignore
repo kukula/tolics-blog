@@ -37,5 +37,9 @@ node_modules/
 # Hugo server PID
 hugo_stats.json
 
-.claude/
+# Local, per-machine Claude settings (personal permission allowlist).
+# The rest of .claude/ (shared skills) IS tracked.
+.claude/settings.local.json
+
+# Secrets (GEMINI_API_KEY etc.)
 env

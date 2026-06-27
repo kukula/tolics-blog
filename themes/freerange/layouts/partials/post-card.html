@@ -1,0 +1,26 @@
+{{- /*
+  One post card for the homepage and list/taxonomy pages. Context (.) is the
+  Page. The whole card is a single link: the cover (if any) fills it with the
+  meta overlaid top-right, melting into the teal title plate that carries the
+  title and excerpt. Coverless cards keep the meta in the plate. Mirrors the
+  single-post hero (single.html), which uses the same .post-card--cover styles.
+*/ -}}
+{{- $cover := partial "cover.html" (dict "page" . "class" "card-cover") -}}
+{{- $hasCover := trim $cover " \n\r\t" -}}
+<article class="post-card{{ if $hasCover }} post-card--cover{{ end }}">
+    <a class="post-card-link" href="{{ .RelPermalink }}">
+        {{- if $hasCover }}
+        {{ $cover | safeHTML }}
+        <div class="post-meta">{{ partial "post-card-meta.html" . }}</div>
+        {{- end }}
+        <header class="post-header">
+            <h2 class="post-title">{{ .Title }}</h2>
+            {{- if not $hasCover }}
+            <div class="post-meta">{{ partial "post-card-meta.html" . }}</div>
+            {{- end }}
+            <div class="post-excerpt">
+                {{ .Description }}
+            </div>
+        </header>
+    </a>
+</article>

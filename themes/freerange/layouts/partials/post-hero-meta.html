@@ -1,0 +1,6 @@
+{{- /*
+  Meta line for the single-post hero: date · reading time · author · category.
+  Context (.) is the Page. Like post-card-meta.html, but with the author byline
+  and no pin icon (a single post never shows its own pin). Wrap in a .post-meta.
+*/ -}}
+{{- .Date.Format "Jan 02, 2006" }} • {{ .ReadingTime }} min read{{ if .Params.author }} • by {{ .Params.author }}{{ end }}{{ if .Params.category }} • {{ .Params.category | upper }}{{ end -}}

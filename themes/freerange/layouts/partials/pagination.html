@@ -1,0 +1,17 @@
+{{- /*
+  Pagination controls (Previous / page-of / Next), shared by every paginated
+  list so the markup and styling exist in exactly one place. Context (.) is a
+  Hugo Paginator — call as: {{ partial "pagination.html" $paginator }}.
+*/ -}}
+{{- $paginator := . -}}
+{{ if or $paginator.HasPrev $paginator.HasNext }}
+<nav class="pagination">
+    {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="btn btn--secondary">← PREVIOUS</a>
+    {{ end }}
+    <span class="page-info">PAGE {{ $paginator.PageNumber }} OF {{ $paginator.TotalPages }}</span>
+    {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="btn btn--secondary">NEXT →</a>
+    {{ end }}
+</nav>
+{{ end }}

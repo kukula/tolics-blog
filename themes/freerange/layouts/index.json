@@ -5,10 +5,11 @@
       "title" .Title
       "content" (.Plain | htmlUnescape)
       "description" (.Description | plainify | htmlUnescape)
-      "permalink" .Permalink
+      "permalink" .RelPermalink
       "date" .Date
       "tags" .Params.tags
       "categories" .Params.categories
+      "category" .Params.category
       "readingTime" .ReadingTime
       "section" .Section
     ) -}}

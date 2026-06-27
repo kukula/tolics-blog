@@ -7,6 +7,7 @@ author: "Tolic Kukul"
 description: "Staff Engineer building agentic AI systems in Melbourne. 20+ years of production SaaS, MSc in Applied Mathematics. Writing on AI-native architecture."
 tags: ["about", "career", "software-architecture", "ai"]
 categories: ["Personal"]
+illustration: "A warm, joyful gathering of people from many places dancing together in the open — bodies mid-motion, arms raised, laughter everywhere, a celebration of travel and meeting new people. Faceted figures swirl in rhythm; ribbons of paint and colour arc through the air like brushstrokes, splashing the scene with warmth. A painter's easel and bright pigments off to one side. Friendly robots join the dance at the edges. Behind, a faceted skyline glows soft and welcoming under radiant light — a feeling of home everywhere."
 ---
 
 ## I'm Tolic

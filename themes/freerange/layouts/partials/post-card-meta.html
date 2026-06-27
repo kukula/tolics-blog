@@ -1,0 +1,7 @@
+{{- /*
+  Inline meta line for a post card: optional pin icon, date, reading time, and
+  category. Context (.) is the Page. Used on the homepage, list/taxonomy pages,
+  and (without the pin) the single-post hero. Wrap in a .post-meta element.
+*/ -}}
+{{- if .Params.pinned }}<svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5"/><path d="M9 11V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7"/><path d="M5 17h14"/><path d="M6 11l1.5 6h9L18 11"/></svg> {{ end -}}
+{{- .Date.Format "Jan 02, 2006" }} • {{ .ReadingTime }} min read{{ if .Params.category }} • {{ .Params.category | upper }}{{ end -}}

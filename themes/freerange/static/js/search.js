@@ -54,25 +54,27 @@ document.addEventListener('DOMContentLoaded', function() {
         noResults.style.display = 'none';
         searchSummary.textContent = `Found ${results.length} result${results.length > 1 ? 's' : ''} for "${query}"`;
         
+        // Coverless post card — the same markup as partials/post-card.html so
+        // search results match every other article list (just without a cover).
         searchList.innerHTML = results.map(result => {
             const post = result.item;
             const date = new Date(post.date).toLocaleDateString('en-US', {
                 year: 'numeric',
-                month: 'long',
-                day: 'numeric'
+                month: 'short',
+                day: '2-digit'
             });
+            const category = post.category ? ` • ${post.category.toUpperCase()}` : '';
 
             return `
-                <a href="${post.permalink}" class="btn btn--large btn--outline search-result-item">
-                    <div class="search-result-title">${post.title}</div>
-                    <div class="search-result-meta">${date.toUpperCase()} • ${post.readingTime} MIN READ</div>
-                    ${post.description ? `<div class="search-result-summary">${post.description}</div>` : ''}
-                    ${post.tags && post.tags.length > 0 ? 
-                        `<div class="search-result-tags">
-                            ${post.tags.slice(0, 3).map(tag => `<span class="search-result-tag">#${tag.toUpperCase()}</span>`).join(' ')}
-                        </div>` : ''
-                    }
-                </a>
+                <article class="post-card">
+                    <a class="post-card-link" href="${post.permalink}">
+                        <header class="post-header">
+                            <h2 class="post-title">${post.title}</h2>
+                            <div class="post-meta">${date} • ${post.readingTime} min read${category}</div>
+                            <div class="post-excerpt">${post.description || ''}</div>
+                        </header>
+                    </a>
+                </article>
             `;
         }).join('');
     }

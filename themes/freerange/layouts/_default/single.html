@@ -1,44 +1,28 @@
 {{ define "main" }}
 <article class="post-single">
-    {{/* Cover illustration: rendered by convention from the post's filename
-         (ContentBaseName), processed by Hugo into responsive WebP. Optional
-         explicit .Params.cover override (used verbatim, unprocessed).
-         Above the fold and the LCP element — no lazy-load. */}}
-    {{ if .Params.cover }}
-    <img class="post-cover" src="{{ .Params.cover | relURL }}" alt=""
-         fetchpriority="high" decoding="async">
-    {{ else if .File }}
-        {{ with resources.Get (printf "images/covers/%s.png" .File.ContentBaseName) }}
-            {{/* Generate WebP renditions only at widths the source can supply (no upscaling). */}}
-            {{ $src := . }}
-            {{ $candidates := slice 480 768 1024 1280 1600 }}
-            {{ $chosen := slice }}
-            {{ range $candidates }}
-                {{ if lt . $src.Width }}{{ $chosen = $chosen | append . }}{{ end }}
-            {{ end }}
-            {{/* Always include the native width as the top rendition (for retina), avoiding upscaling. */}}
-            {{ $chosen = $chosen | append $src.Width }}
-            {{ $srcset := slice }}
-            {{ range $chosen }}
-                {{ $r := $src.Resize (printf "%dx webp" .) }}
-                {{ $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) }}
-            {{ end }}
-            {{ $fallback := $src.Resize (printf "%dx webp" (index $chosen (sub (len $chosen) 1))) }}
-    <img class="post-cover" src="{{ $fallback.RelPermalink }}"
-         srcset="{{ delimit $srcset ", " }}"
-         sizes="(min-width: 1100px) 1040px, 100vw"
-         width="{{ $fallback.Width }}" height="{{ $fallback.Height }}"
-         alt="" fetchpriority="high" decoding="async">
-        {{ end }}
-    {{ end }}
-    <header class="post-header card--large card--accent">
-        <h1 class="post-title">{{ .Title }}</h1>
-        <div class="post-meta text-meta">
-            {{ .Date.Format "Jan 02, 2006" }} • {{ .ReadingTime }} min read
-            {{ if .Params.author }} • by {{ .Params.author }}{{ end }}
-            {{ if .Params.category }} • {{ .Params.category | upper }}{{ end }}
+    {{/* Hero unit mirrors the homepage post-card: cover banner melting into the
+         teal title plate, meta overlaid on the cover, one shared border+shadow.
+         The cover is still the LCP element — priority keeps it eager + high. */}}
+    {{ $cover := partial "cover.html" (dict "page" . "class" "card-cover" "sizes" "(min-width: 1100px) 1040px, 100vw" "priority" true) }}
+    {{ $hasCover := trim $cover " \n\r\t" }}
+    {{ if $hasCover }}
+    <div class="post-card post-card--cover post-card--hero">
+        <div class="post-card-link">
+            {{ $cover | safeHTML }}
+            <div class="post-meta">{{ partial "post-hero-meta.html" . }}</div>
+            <header class="post-header">
+                <h1 class="post-title">{{ .Title }}</h1>
+            </header>
         </div>
-    </header>
+    </div>
+    {{ else }}
+    <div class="post-card post-card--hero">
+        <header class="post-header">
+            <h1 class="post-title">{{ .Title }}</h1>
+            <div class="post-meta">{{ partial "post-hero-meta.html" . }}</div>
+        </header>
+    </div>
+    {{ end }}
     <div class="post-content">
         {{ .Content }}
         
